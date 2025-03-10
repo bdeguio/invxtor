@@ -3,30 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black Webpage with Sidebar</title>
+    <title>Chairman’s Letter - 1977</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="dark-mode">
-    <div class="sidebar" id="sidebar">
-        <button class="menu-button" onclick="toggleSidebar()">☰</button>
-        <ul id="page-list" style="list-style: none; padding: 10px; display: none; text-align: left;">
-            <li style="margin-bottom: 10px;"><a href="Chairman's Letter - 1977.html">1977</a></li>
-        </ul>
-        <li id="close-btn" style="margin-top: 20px; color: red; font-weight: bold; cursor: pointer; text-align: left; padding-left: 10px;" onclick="closeSidebar()">Close</li>
+    <div class="container">
+        <h1>Welcome to the Chairman’s Letter Archive</h1>
+        <p>Click the link below to read the 1977 Chairman’s Letter:</p>
+        <a href="Chairman’s Letter - 1977.html">Read the 1977 Letter</a>
     </div>
-    <div class="main-content" id="main-content">
-        <h1 id="main-heading">||</h1>
-    </div>
-
-    <script>
-        function toggleSidebar() {
-            const list = document.getElementById("page-list");
-            list.style.display = list.style.display === "none" ? "block" : "none";
-        }
-
-        function closeSidebar() {
-            document.getElementById("page-list").style.display = "none";
-        }
-    </script>
 </body>
 </html>
