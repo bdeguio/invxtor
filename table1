@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equity Holdings - 1977</title>
+    <style>
+        body {
+            font-family: "Courier New", monospace;
+            background-color: #fdfdfd;
+            color: #222;
+            margin: 40px;
+            text-align: center;
+        }
+        table {
+            width: 90%;
+            margin: auto;
+            border-collapse: collapse;
+            font-size: 16px;
+            text-align: right;
+        }
+        th, td {
+            padding: 6px 12px;
+            border-bottom: 1px solid #ccc;
+        }
+        th {
+            text-align: left;
+            font-weight: bold;
+        }
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+        tfoot td {
+            font-weight: bold;
+        }
+        .company {
+            text-align: left;
+        }
+        .total {
+            border-top: 1px solid black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Equity Holdings of Our Insurance Companies (1977)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No. of Shares</th>
+                <th class="company">Company</th>
+                <th>Cost ($000s)</th>
+                <th>Market Value ($000s)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>220,000</td>
+                <td class="company">Capital Cities Communications, Inc.</td>
+                <td>10,909</td>
+                <td>13,228</td>
+            </tr>
+            <tr>
+                <td>1,986,953</td>
+                <td class="company">Government Employees Insurance Co. Conv. Preferred</td>
+                <td>19,417</td>
+                <td>33,033</td>
+            </tr>
+            <tr>
+                <td>1,294,308</td>
+                <td class="company">Government Employees Insurance Co. Common Stock</td>
+                <td>4,116</td>
+                <td>10,516</td>
+            </tr>
+            <tr>
+                <td>592,650</td>
+                <td class="company">The Interpublic Group of Companies, Inc.</td>
+                <td>4,531</td>
+                <td>17,187</td>
+            </tr>
+            <tr>
+                <td>324,580</td>
+                <td class="company">Kaiser Aluminum & Chemical Corporation</td>
+                <td>11,218</td>
+                <td>9,981</td>
+            </tr>
+            <tr>
+                <td>1,305,800</td>
+                <td class="company">Kaiser Industries, Inc.</td>
+                <td>778</td>
+                <td>6,039</td>
+            </tr>
+            <tr>
+                <td>226,900</td>
+                <td class="company">Knight-Ridder Newspapers, Inc.</td>
+                <td>7,534</td>
+                <td>8,736</td>
+            </tr>
+            <tr>
+                <td>170,800</td>
+                <td class="company">Ogilvy & Mather International, Inc.</td>
+                <td>2,762</td>
+                <td>6,960</td>
+            </tr>
+            <tr>
+                <td>934,300</td>
+                <td class="company">The Washington Post Company Class B</td>
+                <td>10,628</td>
+                <td>33,401</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" class="company total">Total</td>
+                <td class="total">71,893</td>
+                <td class="total">139,081</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="company">All Other Holdings</td>
+                <td>34,996</td>
+                <td>41,992</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="company total">Total Equities</td>
+                <td class="total">106,889</td>
+                <td class="total">181,073</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
