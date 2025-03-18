@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Net Earnings Table</title>
+</head>
+<body>
+    <h2>Net Earnings (1978 vs. 1977)</h2>
+    <table border="1">
+        <tr>
+            <th>Category</th>
+            <th>Total Earnings Before Taxes (1978)</th>
+            <th>Total Earnings Before Taxes (1977)</th>
+            <th>Berkshire Share Before Taxes (1978)</th>
+            <th>Berkshire Share Before Taxes (1977)</th>
+            <th>Berkshire Share After Taxes (1978)</th>
+            <th>Berkshire Share After Taxes (1977)</th>
+        </tr>
+        <tr>
+            <td>Total - all entities</td>
+            <td>$66,180</td>
+            <td>$57,089</td>
+            <td>$54,350</td>
+            <td>$42,234</td>
+            <td>$39,242</td>
+            <td>$30,393</td>
+        </tr>
+        <tr>
+            <td>Earnings from operations:</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Insurance Group - Underwriting</td>
+            <td>$3,001</td>
+            <td>$5,802</td>
+            <td>$3,000</td>
+            <td>$5,802</td>
+            <td>$1,560</td>
+            <td>$3,017</td>
+        </tr>
+        <tr>
+            <td>Insurance Group - Net investment income</td>
+            <td>$19,705</td>
+            <td>$12,804</td>
+            <td>$19,691</td>
+            <td>$12,804</td>
+            <td>$16,400</td>
+            <td>$11,360</td>
+        </tr>
+        <tr>
+            <td>Berkshire-Waumbec textiles</td>
+            <td>$2,916</td>
+            <td>($620)</td>
+            <td>$2,916</td>
+            <td>($620)</td>
+            <td>$1,342</td>
+            <td>($322)</td>
+        </tr>
+        <tr>
+            <td>Associated Retail Stores, Inc.</td>
+            <td>$2,757</td>
+            <td>$2,775</td>
+            <td>$2,757</td>
+            <td>$2,775</td>
+            <td>$1,176</td>
+            <td>$1,429</td>
+        </tr>
+        <tr>
+            <td>See’s Candies</td>
+            <td>$12,482</td>
+            <td>$12,840</td>
+            <td>$7,013</td>
+            <td>$6,598</td>
+            <td>$3,049</td>
+            <td>$2,974</td>
+        </tr>
+        <tr>
+            <td>Buffalo Evening News</td>
+            <td>($2,913)</td>
+            <td>$751</td>
+            <td>($1,637)</td>
+            <td>$389</td>
+            <td>($738)</td>
+            <td>$158</td>
+        </tr>
+        <tr>
+            <td>Blue Chip Stamps - Parent</td>
+            <td>$2,133</td>
+            <td>$1,091</td>
+            <td>$1,198</td>
+            <td>$566</td>
+            <td>$1,382</td>
+            <td>$892</td>
+        </tr>
+        <tr>
+            <td>Illinois National Bank and Trust Company</td>
+            <td>$4,822</td>
+            <td>$3,800</td>
+            <td>$4,710</td>
+            <td>$3,706</td>
+            <td>$4,262</td>
+            <td>$3,288</td>
+        </tr>
+        <tr>
+            <td>Wesco Financial Corporation - Parent</td>
+            <td>$1,771</td>
+            <td>$2,006</td>
+            <td>$777</td>
+            <td>$813</td>
+            <td>$665</td>
+            <td>$419</td>
+        </tr>
+        <tr>
+            <td>Mutual Savings and Loan Association</td>
+            <td>$10,556</td>
+            <td>$6,779</td>
+            <td>$4,638</td>
+            <td>$2,747</td>
+            <td>$3,042</td>
+            <td>$1,946</td>
+        </tr>
+        <tr>
+            <td>Interest on Debt</td>
+            <td>($5,566)</td>
+            <td>($5,302)</td>
+            <td>($4,546)</td>
+            <td>($4,255)</td>
+            <td>($2,349)</td>
+            <td>($2,129)</td>
+        </tr>
+        <tr>
+            <td>Other</td>
+            <td>$720</td>
+            <td>$165</td>
+            <td>$438</td>
+            <td>$102</td>
+            <td>$261</td>
+            <td>$48</td>
+        </tr>
+        <tr>
+            <td>Total Earnings from Operations</td>
+            <td>$52,384</td>
+            <td>$42,891</td>
+            <td>$40,955</td>
+            <td>$31,427</td>
+            <td>$30,052</td>
+            <td>$23,080</td>
+        </tr>
+        <tr>
+            <td>Realized Securities Gain</td>
+            <td>$13,796</td>
+            <td>$14,198</td>
+            <td>$13,395</td>
+            <td>$10,807</td>
+            <td>$9,190</td>
+            <td>$7,313</td>
+        </tr>
+        <tr>
+            <td>Total Earnings</td>
+            <td>$66,180</td>
+            <td>$57,089</td>
+            <td>$54,350</td>
+            <td>$42,234</td>
+            <td>$39,242</td>
+            <td>$30,393</td>
+        </tr>
+    </table>
+</body>
+</html>
