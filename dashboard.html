@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Berkshire Hathaway — Growth & Portfolio</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+:root{--ink:#1a1a1a;--muted:#666;--line:#e2e2e2;--accent:#c8102e;--bg:#faf9f7}
+body{font-family:Georgia,'Times New Roman',serif;margin:0;background:var(--bg);color:var(--ink)}
+header{padding:32px 24px 16px;border-bottom:1px solid var(--line);background:#fff}
+h1{margin:0 0 4px;font-size:26px}.sub{color:var(--muted);font-size:14px}
+main{max-width:1000px;margin:0 auto;padding:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:20px;margin-bottom:24px}
+.card h2{margin:0 0 4px;font-size:18px}.card p{margin:0 0 16px;color:var(--muted);font-size:13px;line-height:1.5}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+select{font-family:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:#fff}
+.note{font-size:12px;color:var(--muted);font-style:italic;margin-top:8px}
+canvas{max-height:380px}footer{text-align:center;color:var(--muted);font-size:12px;padding:16px}
+</style></head><body>
+<header><h1>Berkshire Hathaway — Growth &amp; Portfolio</h1>
+<div class="sub">A visual companion to the shareholder letters, 1965–2024. Numeric data only.</div></header>
+<main>
+<div class="card"><h2>Compounding: $100 invested in 1965</h2>
+<p>Cumulative index built from the annual % change in per-share market value, Berkshire vs. the S&amp;P 500 (dividends included), 1965–2024. Log scale.</p>
+<canvas id="cumChart"></canvas></div>
+<div class="card"><h2>Annual return: Berkshire vs. S&amp;P 500</h2>
+<p>Year-by-year percentage change, 1965–2024.</p><canvas id="annualChart"></canvas></div>
+<div class="card"><h2>Portfolio value: cost vs. market</h2>
+<p>Total reported market value of top common-stock holdings vs. their cost basis. The widening gap is unrealized gain. 2002–2021.</p>
+<canvas id="portChart"></canvas></div>
+<div class="card"><h2>Holdings for a given year</h2>
+<p>Top itemized common-stock holdings by market value.</p>
+<div class="controls"><select id="yearSel"></select></div><canvas id="holdChart"></canvas></div>
+</main>
+<footer>Data extracted from Berkshire Hathaway shareholder letters for personal study. Facts only; no letter text reproduced.</footer>
+<script>
+async function main(){
+  const data = await (await fetch('data.json')).json();
+  const C={berkshire:'#c8102e',sp:'#4a4a4a',cost:'#b0a99f',market:'#c8102e'};
+  const s=data.performance.annual_change;
+  let iB=100,iS=100;const yrs=[],b=[],sp=[];
+  s.forEach(r=>{iB*=(1+r.berkshire_pct/100);iS*=(1+r.sp500_pct/100);yrs.push(r.year);b.push(Math.round(iB));sp.push(Math.round(iS));});
+  new Chart(cumChart,{type:'line',data:{labels:yrs,datasets:[{label:'Berkshire',data:b,borderColor:C.berkshire,pointRadius:0,borderWidth:2},{label:'S&P 500',data:sp,borderColor:C.sp,pointRadius:0,borderWidth:2}]},options:{scales:{y:{type:'logarithmic',title:{display:true,text:'Index ($, log)'}}},plugins:{legend:{position:'top'}}}});
+  new Chart(annualChart,{type:'bar',data:{labels:s.map(r=>r.year),datasets:[{label:'Berkshire',data:s.map(r=>r.berkshire_pct),backgroundColor:C.berkshire},{label:'S&P 500',data:s.map(r=>r.sp500_pct),backgroundColor:C.sp}]},options:{plugins:{legend:{position:'top'}},scales:{y:{title:{display:true,text:'% change'}}}}});
+  const byYear={};data.holdings.forEach(h=>{(byYear[h.year]=byYear[h.year]||{cost:0,market:0});byYear[h.year].cost+=h.cost_millions;byYear[h.year].market+=h.market_millions;});
+  const pY=Object.keys(byYear).map(Number).sort((a,b)=>a-b);
+  new Chart(portChart,{type:'line',data:{labels:pY,datasets:[{label:'Market value ($M)',data:pY.map(y=>byYear[y].market),borderColor:C.market,backgroundColor:'rgba(200,16,46,.08)',fill:true,pointRadius:2},{label:'Cost basis ($M)',data:pY.map(y=>byYear[y].cost),borderColor:C.cost,backgroundColor:'rgba(176,169,159,.15)',fill:true,pointRadius:2}]},options:{plugins:{legend:{position:'top'}},scales:{y:{title:{display:true,text:'$ millions'}}}}});
+  pY.forEach(y=>{const o=document.createElement('option');o.value=y;o.textContent=y;yearSel.appendChild(o);});
+  yearSel.value=pY[pY.length-1];let hc;
+  function drawHold(y){const hs=data.holdings.filter(h=>h.year==y).sort((a,b)=>b.market_millions-a.market_millions);if(hc)hc.destroy();hc=new Chart(holdChart,{type:'bar',data:{labels:hs.map(h=>h.company),datasets:[{label:'Market value ($M)',data:hs.map(h=>h.market_millions),backgroundColor:C.market}]},options:{indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{title:{display:true,text:'$ millions'}}}}});}
+  yearSel.onchange=e=>drawHold(e.target.value);drawHold(yearSel.value);
+}
+main();
+</script></body></html>
