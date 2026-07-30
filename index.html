@@ -1,66 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Berkshire Hathaway Letters</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 2rem;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-    }
-    a {
-      display: block;
-      margin: 0.25rem 0;
-      font-size: 1.1rem;
-      color: #0066cc;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-</head>
-<body>
-  <h1>Berkshire Hathaway</h1>
-  <div>
-    <!-- Links from 1977 to 2002 -->
-    <a href="https://bdeguio.github.io/invxtor/1977.html">1977</a>
-    <a href="https://bdeguio.github.io/invxtor/1978.html">1978</a>
-    <a href="https://bdeguio.github.io/invxtor/1979.html">1979</a>
-    <a href="https://bdeguio.github.io/invxtor/1980.html">1980</a>
-    <a href="https://bdeguio.github.io/invxtor/1981.html">1981</a>
-    <a href="https://bdeguio.github.io/invxtor/1982.html">1982</a>
-    <a href="https://bdeguio.github.io/invxtor/1983.html">1983</a>
-    <a href="https://bdeguio.github.io/invxtor/1984.html">1984</a>
-    <a href="https://bdeguio.github.io/invxtor/1985.html">1985</a>
-    <a href="https://bdeguio.github.io/invxtor/1986.html">1986</a>
-    <a href="https://bdeguio.github.io/invxtor/1987.html">1987</a>
-    <a href="https://bdeguio.github.io/invxtor/1988.html">1988</a>
-    <a href="https://bdeguio.github.io/invxtor/1989.html">1989</a>
-    <a href="https://bdeguio.github.io/invxtor/1990.html">1990</a>
-    <a href="https://bdeguio.github.io/invxtor/1991.html">1991</a>
-    <a href="https://bdeguio.github.io/invxtor/1992.html">1992</a>
-    <a href="https://bdeguio.github.io/invxtor/1993.html">1993</a>
-    <a href="https://bdeguio.github.io/invxtor/1994.html">1994</a>
-    <a href="https://bdeguio.github.io/invxtor/1995.html">1995</a>
-    <a href="https://bdeguio.github.io/invxtor/1996.html">1996</a>
-    <a href="https://bdeguio.github.io/invxtor/1997.html">1997</a>
-    <a href="https://bdeguio.github.io/invxtor/1998.html">1998</a>
-    <a href="https://bdeguio.github.io/invxtor/1999.html">1999</a>
-    <a href="https://bdeguio.github.io/invxtor/2000.html">2000</a>
-    <a href="https://bdeguio.github.io/invxtor/2001.html">2001</a>
-    <a href="https://bdeguio.github.io/invxtor/2002.html">2002</a>
+<html lang="en"><head><meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Berkshire Hathaway — Growth & Portfolio</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4"></script>
+<style>
+:root{--ink:#1a1a1a;--muted:#666;--line:#e2e2e2;--accent:#c8102e;--bg:#faf9f7}
+body{font-family:Georgia,'Times New Roman',serif;margin:0;background:var(--bg);color:var(--ink)}
+header{padding:32px 24px 16px;border-bottom:1px solid var(--line);background:#fff;display:flex;align-items:flex-start;gap:16px}
+.hamburger{flex:0 0 auto;background:none;border:1px solid var(--line);border-radius:6px;width:42px;height:42px;cursor:pointer;font-size:20px;line-height:1;color:var(--ink);display:flex;align-items:center;justify-content:center}
+.hamburger:hover{background:#f2f0ec}
+.head-text{flex:1 1 auto}
+h1{margin:0 0 4px;font-size:26px}.sub{color:var(--muted);font-size:14px}
+main{max-width:1000px;margin:0 auto;padding:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:20px;margin-bottom:24px}
+.card h2{margin:0 0 4px;font-size:18px}.card p{margin:0 0 16px;color:var(--muted);font-size:13px;line-height:1.5}
+.controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+select{font-family:inherit;padding:6px 10px;border:1px solid var(--line);border-radius:6px;background:#fff}
+.note{font-size:12px;color:var(--muted);font-style:italic;margin-top:8px}
+canvas{max-height:380px}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:16px}
+footer a{color:var(--accent);text-decoration:none}footer a:hover{text-decoration:underline}
+.footer-link{margin-top:8px;font-size:13px}
+/* Sidebar */
+#sidebar{position:fixed;top:0;left:0;height:100%;width:230px;background:#fff;border-right:1px solid var(--line);box-shadow:2px 0 12px rgba(0,0,0,.08);transform:translateX(-100%);transition:transform .25s ease;z-index:1000;display:flex;flex-direction:column;overflow-y:auto}
+#sidebar.open{transform:translateX(0)}
+#sidebar .side-head{display:flex;align-items:center;justify-content:space-between;padding:16px;border-bottom:1px solid var(--line)}
+#sidebar .side-head h3{margin:0;font-size:16px}
+#sidebar .close-btn{background:none;border:none;font-size:22px;cursor:pointer;color:var(--muted);line-height:1}
+#sidebar nav{padding:8px 0}
+#sidebar nav a{display:block;padding:8px 20px;color:#0066cc;text-decoration:none;font-size:15px}
+#sidebar nav a:hover{background:#f2f0ec;text-decoration:underline}
+#overlay{position:fixed;inset:0;background:rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .25s ease;z-index:900}
+#overlay.show{opacity:1;pointer-events:auto}
+</style></head><body>
+<div id="sidebar" aria-label="Letters index">
+  <div class="side-head"><h3>Index</h3><button class="close-btn" id="closeSide" aria-label="Close">&times;</button></div>
+  <nav>
+      <a href="https://bdeguio.github.io/invxtor/1977.html">1977</a>
+      <a href="https://bdeguio.github.io/invxtor/1978.html">1978</a>
+      <a href="https://bdeguio.github.io/invxtor/1979.html">1979</a>
+      <a href="https://bdeguio.github.io/invxtor/1980.html">1980</a>
+      <a href="https://bdeguio.github.io/invxtor/1981.html">1981</a>
+      <a href="https://bdeguio.github.io/invxtor/1982.html">1982</a>
+      <a href="https://bdeguio.github.io/invxtor/1983.html">1983</a>
+      <a href="https://bdeguio.github.io/invxtor/1984.html">1984</a>
+      <a href="https://bdeguio.github.io/invxtor/1985.html">1985</a>
+      <a href="https://bdeguio.github.io/invxtor/1986.html">1986</a>
+      <a href="https://bdeguio.github.io/invxtor/1987.html">1987</a>
+      <a href="https://bdeguio.github.io/invxtor/1988.html">1988</a>
+      <a href="https://bdeguio.github.io/invxtor/1989.html">1989</a>
+      <a href="https://bdeguio.github.io/invxtor/1990.html">1990</a>
+      <a href="https://bdeguio.github.io/invxtor/1991.html">1991</a>
+      <a href="https://bdeguio.github.io/invxtor/1992.html">1992</a>
+      <a href="https://bdeguio.github.io/invxtor/1993.html">1993</a>
+      <a href="https://bdeguio.github.io/invxtor/1994.html">1994</a>
+      <a href="https://bdeguio.github.io/invxtor/1995.html">1995</a>
+      <a href="https://bdeguio.github.io/invxtor/1996.html">1996</a>
+      <a href="https://bdeguio.github.io/invxtor/1997.html">1997</a>
+      <a href="https://bdeguio.github.io/invxtor/1998.html">1998</a>
+      <a href="https://bdeguio.github.io/invxtor/1999.html">1999</a>
+      <a href="https://bdeguio.github.io/invxtor/2000.html">2000</a>
+      <a href="https://bdeguio.github.io/invxtor/2001.html">2001</a>
+      <a href="https://bdeguio.github.io/invxtor/2002.html">2002</a>
+  </nav>
+</div>
+<div id="overlay"></div>
+<header>
+  <button class="hamburger" id="hamburger" aria-label="Open index" aria-expanded="false">&#9776;</button>
+  <div class="head-text">
+    <h1>Berkshire Hathaway — Growth &amp; Portfolio</h1>
+    <div class="sub">A visual companion to the shareholder letters, 1965–2024. Numeric data only.</div>
   </div>
-</body>
-</html>
+</header>
+<main>
+<div class="card"><h2>Compounding: $100 invested in 1965</h2>
+<p>Cumulative index built from the annual % change in per-share market value, Berkshire vs. the S&amp;P 500 (dividends included), 1965–2024. Log scale.</p>
+<canvas id="cumChart"></canvas></div>
+<div class="card"><h2>Annual return: Berkshire vs. S&amp;P 500</h2>
+<p>Year-by-year percentage change, 1965–2024.</p><canvas id="annualChart"></canvas></div>
+<div class="card"><h2>Portfolio value: cost vs. market</h2>
+<p>Total reported market value of top common-stock holdings vs. their cost basis. The widening gap is unrealized gain. 2002–2021.</p>
+<canvas id="portChart"></canvas></div>
+<div class="card"><h2>Holdings for a given year</h2>
+<p>Top itemized common-stock holdings by market value.</p>
+<div class="controls"><select id="yearSel"></select></div><canvas id="holdChart"></canvas></div>
+</main>
+<footer>Data extracted from Berkshire Hathaway shareholder letters for personal study. Facts only; no letter text reproduced.
+<div class="footer-link"><a href="https://www.berkshirehathaway.com/letters/letters.html" target="_blank" rel="noopener">View the original shareholder letters &raquo;</a></div></footer>
+<script>
+(function(){
+  var sb=document.getElementById('sidebar'),ov=document.getElementById('overlay'),hb=document.getElementById('hamburger'),cb=document.getElementById('closeSide');
+  function open(){sb.classList.add('open');ov.classList.add('show');hb.setAttribute('aria-expanded','true');}
+  function close(){sb.classList.remove('open');ov.classList.remove('show');hb.setAttribute('aria-expanded','false');}
+  hb.addEventListener('click',function(){sb.classList.contains('open')?close():open();});
+  cb.addEventListener('click',close);ov.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+})();
+async function main(){
+const data = await (await fetch('data.json')).json();
+const C={berkshire:'#c8102e',sp:'#4a4a4a',cost:'#b0a99f',market:'#c8102e'};
+const s=data.performance.annual_change;
+let iB=100,iS=100;const yrs=[],b=[],sp=[];
+s.forEach(r=>{iB*=(1+r.berkshire_pct/100);iS*=(1+r.sp500_pct/100);yrs.push(r.year);b.push(Math.round(iB));sp.push(Math.round(iS));});
+new Chart(cumChart,{type:'line',data:{labels:yrs,datasets:[{label:'Berkshire',data:b,borderColor:C.berkshire,pointRadius:0,borderWidth:2},{label:'S&P 500',data:sp,borderColor:C.sp,pointRadius:0,borderWidth:2}]},options:{scales:{y:{type:'logarithmic',title:{display:true,text:'Index ($, log)'}}},plugins:{legend:{position:'top'}}}});
+new Chart(annualChart,{type:'bar',data:{labels:s.map(r=>r.year),datasets:[{label:'Berkshire',data:s.map(r=>r.berkshire_pct),backgroundColor:C.berkshire},{label:'S&P 500',data:s.map(r=>r.sp500_pct),backgroundColor:C.sp}]},options:{plugins:{legend:{position:'top'}},scales:{y:{title:{display:true,text:'% change'}}}}});
+const byYear={};data.holdings.forEach(h=>{(byYear[h.year]=byYear[h.year]||{cost:0,market:0});byYear[h.year].cost+=h.cost_millions;byYear[h.year].market+=h.market_millions;});
+const pY=Object.keys(byYear).map(Number).sort((a,b)=>a-b);
+new Chart(portChart,{type:'line',data:{labels:pY,datasets:[{label:'Market value ($M)',data:pY.map(y=>byYear[y].market),borderColor:C.market,backgroundColor:'rgba(200,16,46,.08)',fill:true,pointRadius:2},{label:'Cost basis ($M)',data:pY.map(y=>byYear[y].cost),borderColor:C.cost,backgroundColor:'rgba(176,169,159,.15)',fill:true,pointRadius:2}]},options:{plugins:{legend:{position:'top'}},scales:{y:{title:{display:true,text:'$ millions'}}}}});
+pY.forEach(y=>{const o=document.createElement('option');o.value=y;o.textContent=y;yearSel.appendChild(o);});
+yearSel.value=pY[pY.length-1];let hc;
+function drawHold(y){const hs=data.holdings.filter(h=>h.year==y).sort((a,b)=>b.market_millions-a.market_millions);if(hc)hc.destroy();hc=new Chart(holdChart,{type:'bar',data:{labels:hs.map(h=>h.company),datasets:[{label:'Market value ($M)',data:hs.map(h=>h.market_millions),backgroundColor:C.market}]},options:{indexAxis:'y',plugins:{legend:{display:false}},scales:{x:{title:{display:true,text:'$ millions'}}}}});}
+yearSel.onchange=e=>drawHold(e.target.value);drawHold(yearSel.value);
+}
+main();
+</script></body></html>
