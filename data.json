@@ -4,8 +4,9 @@
     "description": "Numeric factual data extracted from Warren Buffett's annual letters for analysis and visualization.",
     "notes": [
       "Performance: annual % change in per-share MARKET value of Berkshire vs. S&P 500 (with dividends), 1965-2024. This is the metric Buffett adopted as primary from 2019 onward; earlier years' market-value figures are taken from the same standardized table in recent letters.",
-      "Holdings: itemized top common-stock holdings, 2002-2021, in USD millions (shares, cost basis, year-end market value). Berkshire stopped publishing the itemized table after the 2021 letter.",
-      "All values are facts extracted from the letters; no letter prose is included."
+      "Holdings: itemized top common-stock holdings, 1977-1990 and 2002-2021, in USD millions (shares, cost basis, year-end market value). Berkshire stopped publishing the itemized table after the 2021 letter.",
+      "All values are facts extracted from the letters; no letter prose is included.",
+      "Holdings for 1977-1990 were extracted from the itemized equity tables in the letters (originally reported in $000s, converted to $ millions). Letters for 1991-2001 present the holdings table as a non-text placeholder in this mirror, so those years are not included."
     ],
     "extracted": "2026-07-29"
   },
@@ -315,11 +316,879 @@
   },
   "holdings": [
     {
-      "year": 2002,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1470,
-      "market_millions": 5359
+      "year": 1977,
+      "company": "The Washington Post Company Class B",
+      "shares": 934300,
+      "cost_millions": 10.628,
+      "market_millions": 33.401
+    },
+    {
+      "year": 1977,
+      "company": "Government Employees Insurance Company Convertible Preferred",
+      "shares": 1986953,
+      "cost_millions": 19.417,
+      "market_millions": 33.033
+    },
+    {
+      "year": 1977,
+      "company": "The Interpublic Group of Companies, Inc.",
+      "shares": 592650,
+      "cost_millions": 4.531,
+      "market_millions": 17.187
+    },
+    {
+      "year": 1977,
+      "company": "Capital Cities Communications, Inc.",
+      "shares": 220000,
+      "cost_millions": 10.909,
+      "market_millions": 13.228
+    },
+    {
+      "year": 1977,
+      "company": "Government Employees Insurance Company Common Stock",
+      "shares": 1294308,
+      "cost_millions": 4.116,
+      "market_millions": 10.516
+    },
+    {
+      "year": 1977,
+      "company": "Kaiser Aluminum & Chemical Corporation",
+      "shares": 324580,
+      "cost_millions": 11.218,
+      "market_millions": 9.981
+    },
+    {
+      "year": 1977,
+      "company": "Knight-Ridder Newspapers, Inc.",
+      "shares": 226900,
+      "cost_millions": 7.534,
+      "market_millions": 8.736
+    },
+    {
+      "year": 1977,
+      "company": "Ogilvy & Mather International, Inc.",
+      "shares": 170800,
+      "cost_millions": 2.762,
+      "market_millions": 6.96
+    },
+    {
+      "year": 1977,
+      "company": "Kaiser Industries, Inc.",
+      "shares": 1305800,
+      "cost_millions": 0.778,
+      "market_millions": 6.039
+    },
+    {
+      "year": 1978,
+      "company": "The Washington Post Company",
+      "shares": 934300,
+      "cost_millions": 10.628,
+      "market_millions": 43.445
+    },
+    {
+      "year": 1978,
+      "company": "Government Employees Insurance Company Convertible Preferred",
+      "shares": 1986953,
+      "cost_millions": 19.417,
+      "market_millions": 28.314
+    },
+    {
+      "year": 1978,
+      "company": "SAFECO Corporation",
+      "shares": 953750,
+      "cost_millions": 23.867,
+      "market_millions": 26.467
+    },
+    {
+      "year": 1978,
+      "company": "Interpublic Group of Companies, Inc.",
+      "shares": 592650,
+      "cost_millions": 4.531,
+      "market_millions": 19.039
+    },
+    {
+      "year": 1978,
+      "company": "Kaiser Aluminum and Chemical Corporation",
+      "shares": 1066934,
+      "cost_millions": 18.085,
+      "market_millions": 18.671
+    },
+    {
+      "year": 1978,
+      "company": "Knight-Ridder Newspapers, Inc.",
+      "shares": 453800,
+      "cost_millions": 7.534,
+      "market_millions": 10.267
+    },
+    {
+      "year": 1978,
+      "company": "Government Employees Insurance Company Common Stock",
+      "shares": 1294308,
+      "cost_millions": 4.116,
+      "market_millions": 9.06
+    },
+    {
+      "year": 1978,
+      "company": "American Broadcasting Companies, Inc.",
+      "shares": 246450,
+      "cost_millions": 6.082,
+      "market_millions": 8.626
+    },
+    {
+      "year": 1979,
+      "company": "GEICO Corp. (Common Stock)",
+      "shares": 5730114,
+      "cost_millions": 28.288,
+      "market_millions": 68.045
+    },
+    {
+      "year": 1979,
+      "company": "The Washington Post Company",
+      "shares": 1868000,
+      "cost_millions": 10.628,
+      "market_millions": 39.241
+    },
+    {
+      "year": 1979,
+      "company": "Handy & Harman",
+      "shares": 1007500,
+      "cost_millions": 21.825,
+      "market_millions": 38.537
+    },
+    {
+      "year": 1979,
+      "company": "SAFECO Corporation",
+      "shares": 953750,
+      "cost_millions": 23.867,
+      "market_millions": 35.527
+    },
+    {
+      "year": 1979,
+      "company": "Interpublic Group of Companies, Inc.",
+      "shares": 711180,
+      "cost_millions": 4.531,
+      "market_millions": 23.736
+    },
+    {
+      "year": 1979,
+      "company": "Kaiser Aluminum & Chemical Corp.",
+      "shares": 1211834,
+      "cost_millions": 20.629,
+      "market_millions": 23.328
+    },
+    {
+      "year": 1979,
+      "company": "F. W. Woolworth Company",
+      "shares": 771900,
+      "cost_millions": 15.515,
+      "market_millions": 19.394
+    },
+    {
+      "year": 1979,
+      "company": "General Foods, Inc.",
+      "shares": 328700,
+      "cost_millions": 11.437,
+      "market_millions": 11.053
+    },
+    {
+      "year": 1979,
+      "company": "American Broadcasting Companies, Inc.",
+      "shares": 246450,
+      "cost_millions": 6.082,
+      "market_millions": 9.673
+    },
+    {
+      "year": 1979,
+      "company": "Affiliated Publications, Inc.",
+      "shares": 289700,
+      "cost_millions": 2.821,
+      "market_millions": 8.8
+    },
+    {
+      "year": 1979,
+      "company": "Ogilvy & Mather International",
+      "shares": 391400,
+      "cost_millions": 3.709,
+      "market_millions": 7.828
+    },
+    {
+      "year": 1979,
+      "company": "Media General, Inc.",
+      "shares": 282500,
+      "cost_millions": 4.545,
+      "market_millions": 7.345
+    },
+    {
+      "year": 1979,
+      "company": "Amerada Hess",
+      "shares": 112545,
+      "cost_millions": 2.861,
+      "market_millions": 5.487
+    },
+    {
+      "year": 1980,
+      "company": "GEICO Corporation",
+      "shares": 7200000,
+      "cost_millions": 47.138,
+      "market_millions": 105.3
+    },
+    {
+      "year": 1980,
+      "company": "General Foods, Inc.",
+      "shares": 1983812,
+      "cost_millions": 62.507,
+      "market_millions": 59.889
+    },
+    {
+      "year": 1980,
+      "company": "Handy & Harman",
+      "shares": 2015000,
+      "cost_millions": 21.825,
+      "market_millions": 58.435
+    },
+    {
+      "year": 1980,
+      "company": "SAFECO Corporation",
+      "shares": 1250525,
+      "cost_millions": 32.062,
+      "market_millions": 45.177
+    },
+    {
+      "year": 1980,
+      "company": "The Washington Post Company",
+      "shares": 1868600,
+      "cost_millions": 10.628,
+      "market_millions": 42.277
+    },
+    {
+      "year": 1980,
+      "company": "Aluminum Company of America",
+      "shares": 464317,
+      "cost_millions": 25.577,
+      "market_millions": 27.685
+    },
+    {
+      "year": 1980,
+      "company": "Kaiser Aluminum & Chemical Corp.",
+      "shares": 1211834,
+      "cost_millions": 20.629,
+      "market_millions": 27.569
+    },
+    {
+      "year": 1980,
+      "company": "Interpublic Group of Companies, Inc.",
+      "shares": 711180,
+      "cost_millions": 4.531,
+      "market_millions": 22.135
+    },
+    {
+      "year": 1980,
+      "company": "E W Woolworth Company",
+      "shares": 667124,
+      "cost_millions": 13.583,
+      "market_millions": 16.511
+    },
+    {
+      "year": 1980,
+      "company": "Pinkerton’s, Inc.",
+      "shares": 370088,
+      "cost_millions": 12.144,
+      "market_millions": 16.489
+    },
+    {
+      "year": 1980,
+      "company": "Cleveland-Cliffs Iron Company",
+      "shares": 475217,
+      "cost_millions": 12.942,
+      "market_millions": 15.894
+    },
+    {
+      "year": 1980,
+      "company": "Affiliated Publications, Inc.",
+      "shares": 434550,
+      "cost_millions": 2.821,
+      "market_millions": 12.222
+    },
+    {
+      "year": 1980,
+      "company": "R. J. Reynolds Industries",
+      "shares": 245700,
+      "cost_millions": 8.702,
+      "market_millions": 11.228
+    },
+    {
+      "year": 1980,
+      "company": "Ogilvy & Mather Int’l. Inc.",
+      "shares": 391400,
+      "cost_millions": 3.709,
+      "market_millions": 9.981
+    },
+    {
+      "year": 1980,
+      "company": "Media General",
+      "shares": 282500,
+      "cost_millions": 4.545,
+      "market_millions": 8.334
+    },
+    {
+      "year": 1980,
+      "company": "National Detroit Corporation",
+      "shares": 247039,
+      "cost_millions": 5.93,
+      "market_millions": 6.299
+    },
+    {
+      "year": 1980,
+      "company": "The Times Mirror Company",
+      "shares": 151104,
+      "cost_millions": 4.447,
+      "market_millions": 6.271
+    },
+    {
+      "year": 1980,
+      "company": "National Student Marketing",
+      "shares": 881500,
+      "cost_millions": 5.128,
+      "market_millions": 5.895
+    },
+    {
+      "year": 1981,
+      "company": "GEICO Corporation",
+      "shares": 7200000,
+      "cost_millions": 47.138,
+      "market_millions": 199.8
+    },
+    {
+      "year": 1981,
+      "company": "R. J. Reynolds Industries, Inc.",
+      "shares": 1764824,
+      "cost_millions": 76.668,
+      "market_millions": 83.127
+    },
+    {
+      "year": 1981,
+      "company": "General Foods, Inc.",
+      "shares": 2101244,
+      "cost_millions": 66.277,
+      "market_millions": 66.714
+    },
+    {
+      "year": 1981,
+      "company": "The Washington Post Company",
+      "shares": 1868600,
+      "cost_millions": 10.628,
+      "market_millions": 58.16
+    },
+    {
+      "year": 1981,
+      "company": "Handy & Harman",
+      "shares": 2015000,
+      "cost_millions": 21.825,
+      "market_millions": 36.27
+    },
+    {
+      "year": 1981,
+      "company": "SAFECO Corporation",
+      "shares": 785225,
+      "cost_millions": 21.329,
+      "market_millions": 31.016
+    },
+    {
+      "year": 1981,
+      "company": "Interpublic Group of Companies, Inc.",
+      "shares": 711180,
+      "cost_millions": 4.531,
+      "market_millions": 23.202
+    },
+    {
+      "year": 1981,
+      "company": "Pinkerton’s, Inc.",
+      "shares": 370088,
+      "cost_millions": 12.144,
+      "market_millions": 19.675
+    },
+    {
+      "year": 1981,
+      "company": "Aluminum Company of America",
+      "shares": 703634,
+      "cost_millions": 19.359,
+      "market_millions": 18.031
+    },
+    {
+      "year": 1981,
+      "company": "Arcata Corporation (including common equivalents)",
+      "shares": 420441,
+      "cost_millions": 14.076,
+      "market_millions": 15.136
+    },
+    {
+      "year": 1981,
+      "company": "Cleveland-Cliffs Iron Company",
+      "shares": 475217,
+      "cost_millions": 12.942,
+      "market_millions": 14.362
+    },
+    {
+      "year": 1981,
+      "company": "Affiliated Publications, Inc.",
+      "shares": 451650,
+      "cost_millions": 3.297,
+      "market_millions": 14.114
+    },
+    {
+      "year": 1981,
+      "company": "GATX Corporation",
+      "shares": 441522,
+      "cost_millions": 17.147,
+      "market_millions": 13.466
+    },
+    {
+      "year": 1981,
+      "company": "Ogilvy & Mather International Inc.",
+      "shares": 391400,
+      "cost_millions": 3.709,
+      "market_millions": 12.329
+    },
+    {
+      "year": 1981,
+      "company": "Media General",
+      "shares": 282500,
+      "cost_millions": 4.545,
+      "market_millions": 11.088
+    },
+    {
+      "year": 1982,
+      "company": "GEICO Corporation",
+      "shares": 7200000,
+      "cost_millions": 47.138,
+      "market_millions": 309.6
+    },
+    {
+      "year": 1982,
+      "company": "R. J. Reynolds Industries",
+      "shares": 3107675,
+      "cost_millions": 142.343,
+      "market_millions": 158.715
+    },
+    {
+      "year": 1982,
+      "company": "The Washington Post Company",
+      "shares": 1868600,
+      "cost_millions": 10.628,
+      "market_millions": 103.24
+    },
+    {
+      "year": 1982,
+      "company": "General Foods, Inc.",
+      "shares": 2101244,
+      "cost_millions": 66.277,
+      "market_millions": 83.68
+    },
+    {
+      "year": 1982,
+      "company": "Time, Inc.",
+      "shares": 1531391,
+      "cost_millions": 45.273,
+      "market_millions": 79.824
+    },
+    {
+      "year": 1982,
+      "company": "Crum & Forster",
+      "shares": 908800,
+      "cost_millions": 47.144,
+      "market_millions": 48.962
+    },
+    {
+      "year": 1982,
+      "company": "Handy & Harman",
+      "shares": 2379200,
+      "cost_millions": 27.318,
+      "market_millions": 46.692
+    },
+    {
+      "year": 1982,
+      "company": "Interpublic Group of Companies, Inc.",
+      "shares": 711180,
+      "cost_millions": 4.531,
+      "market_millions": 34.314
+    },
+    {
+      "year": 1982,
+      "company": "Ogilvy & Mather Int’l. Inc.",
+      "shares": 391400,
+      "cost_millions": 3.709,
+      "market_millions": 17.319
+    },
+    {
+      "year": 1982,
+      "company": "Affiliated Publications, Inc.",
+      "shares": 460650,
+      "cost_millions": 3.516,
+      "market_millions": 16.929
+    },
+    {
+      "year": 1982,
+      "company": "Media General",
+      "shares": 282500,
+      "cost_millions": 4.545,
+      "market_millions": 12.289
+    },
+    {
+      "year": 1983,
+      "company": "GEICO Corporation",
+      "shares": 6850000,
+      "cost_millions": 47.138,
+      "market_millions": 398.156
+    },
+    {
+      "year": 1983,
+      "company": "R. J. Reynolds Industries, Inc.",
+      "shares": 5618661,
+      "cost_millions": 268.918,
+      "market_millions": 341.334
+    },
+    {
+      "year": 1983,
+      "company": "General Foods Corporation",
+      "shares": 4451544,
+      "cost_millions": 163.786,
+      "market_millions": 228.698
+    },
+    {
+      "year": 1983,
+      "company": "The Washington Post Company",
+      "shares": 1868600,
+      "cost_millions": 10.628,
+      "market_millions": 136.875
+    },
+    {
+      "year": 1983,
+      "company": "Time, Inc.",
+      "shares": 901788,
+      "cost_millions": 27.732,
+      "market_millions": 56.86
+    },
+    {
+      "year": 1983,
+      "company": "Handy & Harman",
+      "shares": 2379200,
+      "cost_millions": 27.318,
+      "market_millions": 42.231
+    },
+    {
+      "year": 1983,
+      "company": "Interpublic Group of Companies, Inc.",
+      "shares": 636310,
+      "cost_millions": 4.056,
+      "market_millions": 33.088
+    },
+    {
+      "year": 1983,
+      "company": "Affiliated Publications, Inc.",
+      "shares": 690975,
+      "cost_millions": 3.516,
+      "market_millions": 26.603
+    },
+    {
+      "year": 1983,
+      "company": "Ogilvy & Mather International",
+      "shares": 250400,
+      "cost_millions": 2.58,
+      "market_millions": 12.833
+    },
+    {
+      "year": 1983,
+      "company": "Media General",
+      "shares": 197200,
+      "cost_millions": 3.191,
+      "market_millions": 11.191
+    },
+    {
+      "year": 1984,
+      "company": "GEICO Corporation",
+      "shares": 6850000,
+      "cost_millions": 45.713,
+      "market_millions": 397.3
+    },
+    {
+      "year": 1984,
+      "company": "General Foods Corporation",
+      "shares": 4047191,
+      "cost_millions": 149.87,
+      "market_millions": 226.137
+    },
+    {
+      "year": 1984,
+      "company": "Exxon Corporation",
+      "shares": 3895710,
+      "cost_millions": 173.401,
+      "market_millions": 175.307
+    },
+    {
+      "year": 1984,
+      "company": "The Washington Post Company",
+      "shares": 1868600,
+      "cost_millions": 10.628,
+      "market_millions": 149.955
+    },
+    {
+      "year": 1984,
+      "company": "Time, Inc.",
+      "shares": 2553488,
+      "cost_millions": 89.327,
+      "market_millions": 109.162
+    },
+    {
+      "year": 1984,
+      "company": "American Broadcasting Companies, Inc.",
+      "shares": 740400,
+      "cost_millions": 44.416,
+      "market_millions": 46.738
+    },
+    {
+      "year": 1984,
+      "company": "Handy & Harman",
+      "shares": 2379200,
+      "cost_millions": 27.318,
+      "market_millions": 38.662
+    },
+    {
+      "year": 1984,
+      "company": "Affiliated Publications, Inc.",
+      "shares": 690975,
+      "cost_millions": 3.516,
+      "market_millions": 32.908
+    },
+    {
+      "year": 1984,
+      "company": "Interpublic Group of Companies, Inc.",
+      "shares": 818872,
+      "cost_millions": 2.57,
+      "market_millions": 28.149
+    },
+    {
+      "year": 1984,
+      "company": "Northwest Industries",
+      "shares": 555949,
+      "cost_millions": 26.581,
+      "market_millions": 27.242
+    },
+    {
+      "year": 1985,
+      "company": "GEICO Corporation",
+      "shares": 6850000,
+      "cost_millions": 45.713,
+      "market_millions": 595.95
+    },
+    {
+      "year": 1985,
+      "company": "The Washington Post Company",
+      "shares": 1727765,
+      "cost_millions": 9.731,
+      "market_millions": 205.172
+    },
+    {
+      "year": 1985,
+      "company": "American Broadcasting Companies, Inc.",
+      "shares": 900800,
+      "cost_millions": 54.435,
+      "market_millions": 108.997
+    },
+    {
+      "year": 1985,
+      "company": "Beatrice Companies, Inc.",
+      "shares": 2350922,
+      "cost_millions": 106.811,
+      "market_millions": 108.142
+    },
+    {
+      "year": 1985,
+      "company": "Affiliated Publications, Inc.",
+      "shares": 1036461,
+      "cost_millions": 3.516,
+      "market_millions": 55.71
+    },
+    {
+      "year": 1985,
+      "company": "Time, Inc.",
+      "shares": 847788,
+      "cost_millions": 20.385,
+      "market_millions": 52.669
+    },
+    {
+      "year": 1985,
+      "company": "Handy & Harman",
+      "shares": 2379200,
+      "cost_millions": 27.318,
+      "market_millions": 43.718
+    },
+    {
+      "year": 1986,
+      "company": "Capital Cities/ABC, Inc.",
+      "shares": 2990000,
+      "cost_millions": 515.775,
+      "market_millions": 801.694
+    },
+    {
+      "year": 1986,
+      "company": "GEICO Corporation",
+      "shares": 6850000,
+      "cost_millions": 45.713,
+      "market_millions": 674.725
+    },
+    {
+      "year": 1986,
+      "company": "The Washington Post Company",
+      "shares": 1727765,
+      "cost_millions": 9.731,
+      "market_millions": 269.531
+    },
+    {
+      "year": 1986,
+      "company": "Handy & Harman",
+      "shares": 2379200,
+      "cost_millions": 27.318,
+      "market_millions": 46.989
+    },
+    {
+      "year": 1986,
+      "company": "Lear Siegler, Inc.",
+      "shares": 489300,
+      "cost_millions": 44.064,
+      "market_millions": 44.587
+    },
+    {
+      "year": 1987,
+      "company": "Capital Cities/ABC, Inc.",
+      "shares": 3000000,
+      "cost_millions": 517.5,
+      "market_millions": 1035
+    },
+    {
+      "year": 1987,
+      "company": "GEICO Corporation",
+      "shares": 6850000,
+      "cost_millions": 45.713,
+      "market_millions": 756.925
+    },
+    {
+      "year": 1987,
+      "company": "The Washington Post Company",
+      "shares": 1727765,
+      "cost_millions": 9.731,
+      "market_millions": 323.092
+    },
+    {
+      "year": 1988,
+      "company": "Capital Cities/ABC, Inc.",
+      "shares": 3000000,
+      "cost_millions": 517.5,
+      "market_millions": 1086.75
+    },
+    {
+      "year": 1988,
+      "company": "GEICO Corporation",
+      "shares": 6850000,
+      "cost_millions": 45.713,
+      "market_millions": 849.4
+    },
+    {
+      "year": 1988,
+      "company": "The Coca-Cola Company",
+      "shares": 14172500,
+      "cost_millions": 592.54,
+      "market_millions": 632.448
+    },
+    {
+      "year": 1988,
+      "company": "The Washington Post Company",
+      "shares": 1727765,
+      "cost_millions": 9.731,
+      "market_millions": 364.126
+    },
+    {
+      "year": 1988,
+      "company": "Federal Home Loan Mortgage Corp. Preferred*",
+      "shares": 2400000,
+      "cost_millions": 71.729,
+      "market_millions": 121.2
+    },
+    {
+      "year": 1989,
+      "company": "The Coca-Cola Co.",
+      "shares": 23350000,
+      "cost_millions": 1023.92,
+      "market_millions": 1803.787
+    },
+    {
+      "year": 1989,
+      "company": "Capital Cities/ABC, Inc.",
+      "shares": 3000000,
+      "cost_millions": 517.5,
+      "market_millions": 1692.375
+    },
+    {
+      "year": 1989,
+      "company": "GEICO Corp.",
+      "shares": 6850000,
+      "cost_millions": 45.713,
+      "market_millions": 1044.625
+    },
+    {
+      "year": 1989,
+      "company": "The Washington Post Company",
+      "shares": 1727765,
+      "cost_millions": 9.731,
+      "market_millions": 486.366
+    },
+    {
+      "year": 1989,
+      "company": "Federal Home Loan Mortgage Corp.",
+      "shares": 2400000,
+      "cost_millions": 71.729,
+      "market_millions": 161.1
+    },
+    {
+      "year": 1990,
+      "company": "The Coca-Cola Co.",
+      "shares": 46700000,
+      "cost_millions": 1023.92,
+      "market_millions": 2171.55
+    },
+    {
+      "year": 1990,
+      "company": "Capital Cities/ABC, Inc.",
+      "shares": 3000000,
+      "cost_millions": 517.5,
+      "market_millions": 1377.375
+    },
+    {
+      "year": 1990,
+      "company": "GEICO Corp.",
+      "shares": 6850000,
+      "cost_millions": 45.713,
+      "market_millions": 1110.556
+    },
+    {
+      "year": 1990,
+      "company": "The Washington Post Company",
+      "shares": 1727765,
+      "cost_millions": 9.731,
+      "market_millions": 342.097
+    },
+    {
+      "year": 1990,
+      "company": "Wells Fargo & Company",
+      "shares": 5000000,
+      "cost_millions": 289.431,
+      "market_millions": 289.375
+    },
+    {
+      "year": 1990,
+      "company": "Federal Home Loan Mortgage Corp.",
+      "shares": 2400000,
+      "cost_millions": 71.729,
+      "market_millions": 117
     },
     {
       "year": 2002,
@@ -330,10 +1199,38 @@
     },
     {
       "year": 2002,
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1470,
+      "market_millions": 5359
+    },
+    {
+      "year": 2002,
       "company": "The Gillette Company",
       "shares": 96000000,
       "cost_millions": 600,
       "market_millions": 2915
+    },
+    {
+      "year": 2002,
+      "company": "Wells Fargo & Company",
+      "shares": 53265080,
+      "cost_millions": 306,
+      "market_millions": 2497
+    },
+    {
+      "year": 2002,
+      "company": "The Washington Post Company",
+      "shares": 1727765,
+      "cost_millions": 11,
+      "market_millions": 1275
+    },
+    {
+      "year": 2002,
+      "company": "Moody’s Corporation",
+      "shares": 24000000,
+      "cost_millions": 499,
+      "market_millions": 991
     },
     {
       "year": 2002,
@@ -350,25 +1247,11 @@
       "market_millions": 532
     },
     {
-      "year": 2002,
-      "company": "Moody’s Corporation",
-      "shares": 24000000,
-      "cost_millions": 499,
-      "market_millions": 991
-    },
-    {
-      "year": 2002,
-      "company": "The Washington Post Company",
-      "shares": 1727765,
-      "cost_millions": 11,
-      "market_millions": 1275
-    },
-    {
-      "year": 2002,
-      "company": "Wells Fargo & Company",
-      "shares": 53265080,
-      "cost_millions": 306,
-      "market_millions": 2497
+      "year": 2003,
+      "company": "The Coca-Cola Company",
+      "shares": 200000000,
+      "cost_millions": 1299,
+      "market_millions": 10150
     },
     {
       "year": 2003,
@@ -379,17 +1262,38 @@
     },
     {
       "year": 2003,
-      "company": "The Coca-Cola Company",
-      "shares": 200000000,
-      "cost_millions": 1299,
-      "market_millions": 10150
-    },
-    {
-      "year": 2003,
       "company": "The Gillette Company",
       "shares": 96000000,
       "cost_millions": 600,
       "market_millions": 3526
+    },
+    {
+      "year": 2003,
+      "company": "Wells Fargo & Company",
+      "shares": 56448380,
+      "cost_millions": 463,
+      "market_millions": 3324
+    },
+    {
+      "year": 2003,
+      "company": "Moody’s Corporation",
+      "shares": 24000000,
+      "cost_millions": 499,
+      "market_millions": 1453
+    },
+    {
+      "year": 2003,
+      "company": "The Washington Post Company",
+      "shares": 1727765,
+      "cost_millions": 11,
+      "market_millions": 1367
+    },
+    {
+      "year": 2003,
+      "company": "PetroChina Company Limited",
+      "shares": 2338961000,
+      "cost_millions": 488,
+      "market_millions": 1340
     },
     {
       "year": 2003,
@@ -411,34 +1315,6 @@
       "shares": 6708760,
       "cost_millions": 103,
       "market_millions": 659
-    },
-    {
-      "year": 2003,
-      "company": "Moody’s Corporation",
-      "shares": 24000000,
-      "cost_millions": 499,
-      "market_millions": 1453
-    },
-    {
-      "year": 2003,
-      "company": "PetroChina Company Limited",
-      "shares": 2338961000,
-      "cost_millions": 488,
-      "market_millions": 1340
-    },
-    {
-      "year": 2003,
-      "company": "The Washington Post Company",
-      "shares": 1727765,
-      "cost_millions": 11,
-      "market_millions": 1367
-    },
-    {
-      "year": 2003,
-      "company": "Wells Fargo & Company",
-      "shares": 56448380,
-      "cost_millions": 463,
-      "market_millions": 3324
     },
     {
       "year": 2004,
@@ -463,17 +1339,10 @@
     },
     {
       "year": 2004,
-      "company": "H&R Block, Inc",
-      "shares": 14350600,
-      "cost_millions": 223,
-      "market_millions": 703
-    },
-    {
-      "year": 2004,
-      "company": "M&T Bank Corporation",
-      "shares": 6708760,
-      "cost_millions": 103,
-      "market_millions": 723
+      "company": "Wells Fargo & Company",
+      "shares": 56448380,
+      "cost_millions": 463,
+      "market_millions": 3508
     },
     {
       "year": 2004,
@@ -484,13 +1353,6 @@
     },
     {
       "year": 2004,
-      "company": "PetroChina “H” shares (or equivalents)",
-      "shares": 2338961000,
-      "cost_millions": 488,
-      "market_millions": 1249
-    },
-    {
-      "year": 2004,
       "company": "The Washington Post Company",
       "shares": 1727765,
       "cost_millions": 11,
@@ -498,10 +1360,10 @@
     },
     {
       "year": 2004,
-      "company": "Wells Fargo & Company",
-      "shares": 56448380,
-      "cost_millions": 463,
-      "market_millions": 3508
+      "company": "PetroChina “H” shares (or equivalents)",
+      "shares": 2338961000,
+      "cost_millions": 488,
+      "market_millions": 1249
     },
     {
       "year": 2004,
@@ -511,25 +1373,18 @@
       "market_millions": 1114
     },
     {
-      "year": 2005,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 7802
+      "year": 2004,
+      "company": "M&T Bank Corporation",
+      "shares": 6708760,
+      "cost_millions": 103,
+      "market_millions": 723
     },
     {
-      "year": 2005,
-      "company": "Ameriprise Financial, Inc",
-      "shares": 30322137,
-      "cost_millions": 183,
-      "market_millions": 1243
-    },
-    {
-      "year": 2005,
-      "company": "Anheuser-Busch Cos., Inc",
-      "shares": 43854200,
-      "cost_millions": 2133,
-      "market_millions": 1884
+      "year": 2004,
+      "company": "H&R Block, Inc",
+      "shares": 14350600,
+      "cost_millions": 223,
+      "market_millions": 703
     },
     {
       "year": 2005,
@@ -540,10 +1395,24 @@
     },
     {
       "year": 2005,
-      "company": "M&T Bank Corporation",
-      "shares": 6708760,
-      "cost_millions": 103,
-      "market_millions": 732
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 7802
+    },
+    {
+      "year": 2005,
+      "company": "Wells Fargo & Company",
+      "shares": 95092200,
+      "cost_millions": 2754,
+      "market_millions": 5975
+    },
+    {
+      "year": 2005,
+      "company": "The Procter & Gamble Company",
+      "shares": 100000000,
+      "cost_millions": 940,
+      "market_millions": 5788
     },
     {
       "year": 2005,
@@ -561,17 +1430,10 @@
     },
     {
       "year": 2005,
-      "company": "The Procter & Gamble Company",
-      "shares": 100000000,
-      "cost_millions": 940,
-      "market_millions": 5788
-    },
-    {
-      "year": 2005,
-      "company": "Wal-Mart Stores, Inc",
-      "shares": 19944300,
-      "cost_millions": 944,
-      "market_millions": 933
+      "company": "Anheuser-Busch Cos., Inc",
+      "shares": 43854200,
+      "cost_millions": 2133,
+      "market_millions": 1884
     },
     {
       "year": 2005,
@@ -582,10 +1444,10 @@
     },
     {
       "year": 2005,
-      "company": "Wells Fargo & Company",
-      "shares": 95092200,
-      "cost_millions": 2754,
-      "market_millions": 5975
+      "company": "Ameriprise Financial, Inc",
+      "shares": 30322137,
+      "cost_millions": 183,
+      "market_millions": 1243
     },
     {
       "year": 2005,
@@ -595,18 +1457,18 @@
       "market_millions": 963
     },
     {
-      "year": 2006,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 9198
+      "year": 2005,
+      "company": "Wal-Mart Stores, Inc",
+      "shares": 19944300,
+      "cost_millions": 944,
+      "market_millions": 933
     },
     {
-      "year": 2006,
-      "company": "Anheuser-Busch Cos., Inc",
-      "shares": 36417400,
-      "cost_millions": 1761,
-      "market_millions": 1792
+      "year": 2005,
+      "company": "M&T Bank Corporation",
+      "shares": 6708760,
+      "cost_millions": 103,
+      "market_millions": 732
     },
     {
       "year": 2006,
@@ -617,24 +1479,24 @@
     },
     {
       "year": 2006,
-      "company": "Conoco Phillips",
-      "shares": 17938100,
-      "cost_millions": 1066,
-      "market_millions": 1291
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 9198
     },
     {
       "year": 2006,
-      "company": "Johnson & Johnson",
-      "shares": 21334900,
-      "cost_millions": 1250,
-      "market_millions": 1409
+      "company": "Wells Fargo & Company",
+      "shares": 218169300,
+      "cost_millions": 3697,
+      "market_millions": 7758
     },
     {
       "year": 2006,
-      "company": "M&T Bank Corporation",
-      "shares": 6708760,
-      "cost_millions": 103,
-      "market_millions": 820
+      "company": "The Procter & Gamble Company",
+      "shares": 100000000,
+      "cost_millions": 940,
+      "market_millions": 6427
     },
     {
       "year": 2006,
@@ -652,20 +1514,6 @@
     },
     {
       "year": 2006,
-      "company": "POSCO",
-      "shares": 3486006,
-      "cost_millions": 572,
-      "market_millions": 1158
-    },
-    {
-      "year": 2006,
-      "company": "The Procter & Gamble Company",
-      "shares": 100000000,
-      "cost_millions": 940,
-      "market_millions": 6427
-    },
-    {
-      "year": 2006,
       "company": "Tesco",
       "shares": 229707000,
       "cost_millions": 1340,
@@ -673,10 +1521,52 @@
     },
     {
       "year": 2006,
+      "company": "Anheuser-Busch Cos., Inc",
+      "shares": 36417400,
+      "cost_millions": 1761,
+      "market_millions": 1792
+    },
+    {
+      "year": 2006,
+      "company": "Johnson & Johnson",
+      "shares": 21334900,
+      "cost_millions": 1250,
+      "market_millions": 1409
+    },
+    {
+      "year": 2006,
+      "company": "Conoco Phillips",
+      "shares": 17938100,
+      "cost_millions": 1066,
+      "market_millions": 1291
+    },
+    {
+      "year": 2006,
+      "company": "The Washington Post Company",
+      "shares": 1727765,
+      "cost_millions": 11,
+      "market_millions": 1288
+    },
+    {
+      "year": 2006,
+      "company": "POSCO",
+      "shares": 3486006,
+      "cost_millions": 572,
+      "market_millions": 1158
+    },
+    {
+      "year": 2006,
       "company": "US Bancorp",
       "shares": 31033800,
       "cost_millions": 969,
       "market_millions": 1123
+    },
+    {
+      "year": 2006,
+      "company": "White Mountains Insurance",
+      "shares": 1724200,
+      "cost_millions": 369,
+      "market_millions": 999
     },
     {
       "year": 2006,
@@ -694,45 +1584,10 @@
     },
     {
       "year": 2006,
-      "company": "The Washington Post Company",
-      "shares": 1727765,
-      "cost_millions": 11,
-      "market_millions": 1288
-    },
-    {
-      "year": 2006,
-      "company": "Wells Fargo & Company",
-      "shares": 218169300,
-      "cost_millions": 3697,
-      "market_millions": 7758
-    },
-    {
-      "year": 2006,
-      "company": "White Mountains Insurance",
-      "shares": 1724200,
-      "cost_millions": 369,
-      "market_millions": 999
-    },
-    {
-      "year": 2007,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 7887
-    },
-    {
-      "year": 2007,
-      "company": "Anheuser-Busch Companies, Inc",
-      "shares": 35563200,
-      "cost_millions": 1718,
-      "market_millions": 1861
-    },
-    {
-      "year": 2007,
-      "company": "Burlington Northern Santa Fe",
-      "shares": 60828818,
-      "cost_millions": 4731,
-      "market_millions": 5063
+      "company": "M&T Bank Corporation",
+      "shares": 6708760,
+      "cost_millions": 103,
+      "market_millions": 820
     },
     {
       "year": 2007,
@@ -743,10 +1598,31 @@
     },
     {
       "year": 2007,
-      "company": "Conoco Phillips",
-      "shares": 17508700,
-      "cost_millions": 1039,
-      "market_millions": 1546
+      "company": "Wells Fargo & Company",
+      "shares": 303407068,
+      "cost_millions": 6677,
+      "market_millions": 9160
+    },
+    {
+      "year": 2007,
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 7887
+    },
+    {
+      "year": 2007,
+      "company": "The Procter & Gamble Company",
+      "shares": 101472000,
+      "cost_millions": 1030,
+      "market_millions": 7450
+    },
+    {
+      "year": 2007,
+      "company": "Burlington Northern Santa Fe",
+      "shares": 60828818,
+      "cost_millions": 4731,
+      "market_millions": 5063
     },
     {
       "year": 2007,
@@ -764,31 +1640,10 @@
     },
     {
       "year": 2007,
-      "company": "Moody’s Corporation",
-      "shares": 48000000,
-      "cost_millions": 499,
-      "market_millions": 1714
-    },
-    {
-      "year": 2007,
-      "company": "POSCO",
-      "shares": 3486006,
-      "cost_millions": 572,
-      "market_millions": 2136
-    },
-    {
-      "year": 2007,
-      "company": "The Procter & Gamble Company",
-      "shares": 101472000,
-      "cost_millions": 1030,
-      "market_millions": 7450
-    },
-    {
-      "year": 2007,
-      "company": "Sanofi-Aventis",
-      "shares": 17170953,
-      "cost_millions": 1466,
-      "market_millions": 1575
+      "company": "U.S. Bancorp",
+      "shares": 75176026,
+      "cost_millions": 2417,
+      "market_millions": 2386
     },
     {
       "year": 2007,
@@ -799,24 +1654,38 @@
     },
     {
       "year": 2007,
-      "company": "U.S. Bancorp",
-      "shares": 75176026,
-      "cost_millions": 2417,
-      "market_millions": 2386
+      "company": "POSCO",
+      "shares": 3486006,
+      "cost_millions": 572,
+      "market_millions": 2136
     },
     {
       "year": 2007,
-      "company": "USG Corp",
-      "shares": 17072192,
-      "cost_millions": 536,
-      "market_millions": 611
+      "company": "Anheuser-Busch Companies, Inc",
+      "shares": 35563200,
+      "cost_millions": 1718,
+      "market_millions": 1861
     },
     {
       "year": 2007,
-      "company": "Wal-Mart Stores, Inc",
-      "shares": 19944300,
-      "cost_millions": 942,
-      "market_millions": 948
+      "company": "Moody’s Corporation",
+      "shares": 48000000,
+      "cost_millions": 499,
+      "market_millions": 1714
+    },
+    {
+      "year": 2007,
+      "company": "Sanofi-Aventis",
+      "shares": 17170953,
+      "cost_millions": 1466,
+      "market_millions": 1575
+    },
+    {
+      "year": 2007,
+      "company": "Conoco Phillips",
+      "shares": 17508700,
+      "cost_millions": 1039,
+      "market_millions": 1546
     },
     {
       "year": 2007,
@@ -827,10 +1696,10 @@
     },
     {
       "year": 2007,
-      "company": "Wells Fargo & Company",
-      "shares": 303407068,
-      "cost_millions": 6677,
-      "market_millions": 9160
+      "company": "Wal-Mart Stores, Inc",
+      "shares": 19944300,
+      "cost_millions": 942,
+      "market_millions": 948
     },
     {
       "year": 2007,
@@ -840,11 +1709,11 @@
       "market_millions": 886
     },
     {
-      "year": 2008,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 2812
+      "year": 2007,
+      "company": "USG Corp",
+      "shares": 17072192,
+      "cost_millions": 536,
+      "market_millions": 611
     },
     {
       "year": 2008,
@@ -855,31 +1724,10 @@
     },
     {
       "year": 2008,
-      "company": "ConocoPhillips",
-      "shares": 84896273,
-      "cost_millions": 7008,
-      "market_millions": 4398
-    },
-    {
-      "year": 2008,
-      "company": "Johnson & Johnson",
-      "shares": 30009591,
-      "cost_millions": 1847,
-      "market_millions": 1795
-    },
-    {
-      "year": 2008,
-      "company": "Kraft Foods Inc",
-      "shares": 130272500,
-      "cost_millions": 4330,
-      "market_millions": 3498
-    },
-    {
-      "year": 2008,
-      "company": "POSCO",
-      "shares": 3947554,
-      "cost_millions": 768,
-      "market_millions": 1191
+      "company": "Wells Fargo & Company",
+      "shares": 304392068,
+      "cost_millions": 6702,
+      "market_millions": 8973
     },
     {
       "year": 2008,
@@ -890,17 +1738,45 @@
     },
     {
       "year": 2008,
+      "company": "ConocoPhillips",
+      "shares": 84896273,
+      "cost_millions": 7008,
+      "market_millions": 4398
+    },
+    {
+      "year": 2008,
+      "company": "Kraft Foods Inc",
+      "shares": 130272500,
+      "cost_millions": 4330,
+      "market_millions": 3498
+    },
+    {
+      "year": 2008,
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 2812
+    },
+    {
+      "year": 2008,
+      "company": "U.S. Bancorp",
+      "shares": 75145426,
+      "cost_millions": 2337,
+      "market_millions": 1879
+    },
+    {
+      "year": 2008,
+      "company": "Johnson & Johnson",
+      "shares": 30009591,
+      "cost_millions": 1847,
+      "market_millions": 1795
+    },
+    {
+      "year": 2008,
       "company": "Sanofi-Aventis",
       "shares": 22111966,
       "cost_millions": 1827,
       "market_millions": 1404
-    },
-    {
-      "year": 2008,
-      "company": "Swiss Re",
-      "shares": 11262000,
-      "cost_millions": 773,
-      "market_millions": 530
     },
     {
       "year": 2008,
@@ -911,10 +1787,10 @@
     },
     {
       "year": 2008,
-      "company": "U.S. Bancorp",
-      "shares": 75145426,
-      "cost_millions": 2337,
-      "market_millions": 1879
+      "company": "POSCO",
+      "shares": 3947554,
+      "cost_millions": 768,
+      "market_millions": 1191
     },
     {
       "year": 2008,
@@ -932,24 +1808,10 @@
     },
     {
       "year": 2008,
-      "company": "Wells Fargo & Company",
-      "shares": 304392068,
-      "cost_millions": 6702,
-      "market_millions": 8973
-    },
-    {
-      "year": 2009,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 6143
-    },
-    {
-      "year": 2009,
-      "company": "BYD Company, Ltd",
-      "shares": 225000000,
-      "cost_millions": 232,
-      "market_millions": 1986
+      "company": "Swiss Re",
+      "shares": 11262000,
+      "cost_millions": 773,
+      "market_millions": 530
     },
     {
       "year": 2009,
@@ -960,17 +1822,24 @@
     },
     {
       "year": 2009,
-      "company": "ConocoPhillips",
-      "shares": 37711330,
-      "cost_millions": 2741,
-      "market_millions": 1926
+      "company": "Wells Fargo & Company",
+      "shares": 334235585,
+      "cost_millions": 7394,
+      "market_millions": 9021
     },
     {
       "year": 2009,
-      "company": "Johnson & Johnson",
-      "shares": 28530467,
-      "cost_millions": 1724,
-      "market_millions": 1838
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 6143
+    },
+    {
+      "year": 2009,
+      "company": "The Procter & Gamble Company",
+      "shares": 83128411,
+      "cost_millions": 533,
+      "market_millions": 5040
     },
     {
       "year": 2009,
@@ -988,10 +1857,17 @@
     },
     {
       "year": 2009,
-      "company": "The Procter & Gamble Company",
-      "shares": 83128411,
-      "cost_millions": 533,
-      "market_millions": 5040
+      "company": "Wal-Mart Stores, Inc",
+      "shares": 39037142,
+      "cost_millions": 1893,
+      "market_millions": 2087
+    },
+    {
+      "year": 2009,
+      "company": "BYD Company, Ltd",
+      "shares": 225000000,
+      "cost_millions": 232,
+      "market_millions": 1986
     },
     {
       "year": 2009,
@@ -1002,10 +1878,17 @@
     },
     {
       "year": 2009,
-      "company": "Tesco plc",
-      "shares": 234247373,
-      "cost_millions": 1367,
-      "market_millions": 1620
+      "company": "ConocoPhillips",
+      "shares": 37711330,
+      "cost_millions": 2741,
+      "market_millions": 1926
+    },
+    {
+      "year": 2009,
+      "company": "Johnson & Johnson",
+      "shares": 28530467,
+      "cost_millions": 1724,
+      "market_millions": 1838
     },
     {
       "year": 2009,
@@ -1016,17 +1899,10 @@
     },
     {
       "year": 2009,
-      "company": "Wal-Mart Stores, Inc",
-      "shares": 39037142,
-      "cost_millions": 1893,
-      "market_millions": 2087
-    },
-    {
-      "year": 2009,
-      "company": "Wells Fargo & Company",
-      "shares": 334235585,
-      "cost_millions": 7394,
-      "market_millions": 9021
+      "company": "Tesco plc",
+      "shares": 234247373,
+      "cost_millions": 1367,
+      "market_millions": 1620
     },
     {
       "year": 2009,
@@ -1037,20 +1913,6 @@
     },
     {
       "year": 2010,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 6507
-    },
-    {
-      "year": 2010,
-      "company": "BYD Company, Ltd",
-      "shares": 225000000,
-      "cost_millions": 232,
-      "market_millions": 1182
-    },
-    {
-      "year": 2010,
       "company": "The Coca-Cola Company",
       "shares": 200000000,
       "cost_millions": 1299,
@@ -1058,17 +1920,24 @@
     },
     {
       "year": 2010,
-      "company": "ConocoPhillips",
-      "shares": 29109637,
-      "cost_millions": 2028,
-      "market_millions": 1982
+      "company": "Wells Fargo & Company",
+      "shares": 358936125,
+      "cost_millions": 8015,
+      "market_millions": 11123
     },
     {
       "year": 2010,
-      "company": "Johnson & Johnson",
-      "shares": 45022563,
-      "cost_millions": 2749,
-      "market_millions": 2785
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 6507
+    },
+    {
+      "year": 2010,
+      "company": "The Procter & Gamble Company",
+      "shares": 72391036,
+      "cost_millions": 464,
+      "market_millions": 4657
     },
     {
       "year": 2010,
@@ -1086,17 +1955,38 @@
     },
     {
       "year": 2010,
+      "company": "Johnson & Johnson",
+      "shares": 45022563,
+      "cost_millions": 2749,
+      "market_millions": 2785
+    },
+    {
+      "year": 2010,
+      "company": "U.S. Bancorp",
+      "shares": 78060769,
+      "cost_millions": 2401,
+      "market_millions": 2105
+    },
+    {
+      "year": 2010,
+      "company": "Wal-Mart Stores, Inc",
+      "shares": 39037142,
+      "cost_millions": 1893,
+      "market_millions": 2105
+    },
+    {
+      "year": 2010,
+      "company": "ConocoPhillips",
+      "shares": 29109637,
+      "cost_millions": 2028,
+      "market_millions": 1982
+    },
+    {
+      "year": 2010,
       "company": "POSCO",
       "shares": 3947555,
       "cost_millions": 768,
       "market_millions": 1706
-    },
-    {
-      "year": 2010,
-      "company": "The Procter & Gamble Company",
-      "shares": 72391036,
-      "cost_millions": 464,
-      "market_millions": 4657
     },
     {
       "year": 2010,
@@ -1114,31 +2004,10 @@
     },
     {
       "year": 2010,
-      "company": "U.S. Bancorp",
-      "shares": 78060769,
-      "cost_millions": 2401,
-      "market_millions": 2105
-    },
-    {
-      "year": 2010,
-      "company": "Wal-Mart Stores, Inc",
-      "shares": 39037142,
-      "cost_millions": 1893,
-      "market_millions": 2105
-    },
-    {
-      "year": 2010,
-      "company": "Wells Fargo & Company",
-      "shares": 358936125,
-      "cost_millions": 8015,
-      "market_millions": 11123
-    },
-    {
-      "year": 2011,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 7151
+      "company": "BYD Company, Ltd",
+      "shares": 225000000,
+      "cost_millions": 232,
+      "market_millions": 1182
     },
     {
       "year": 2011,
@@ -1149,13 +2018,6 @@
     },
     {
       "year": 2011,
-      "company": "ConocoPhillips",
-      "shares": 29100937,
-      "cost_millions": 2027,
-      "market_millions": 2121
-    },
-    {
-      "year": 2011,
       "company": "International Business Machines Corp",
       "shares": 63905931,
       "cost_millions": 10856,
@@ -1163,10 +2025,24 @@
     },
     {
       "year": 2011,
-      "company": "Johnson & Johnson",
-      "shares": 31416127,
-      "cost_millions": 1880,
-      "market_millions": 2060
+      "company": "Wells Fargo & Company",
+      "shares": 400015828,
+      "cost_millions": 9086,
+      "market_millions": 11024
+    },
+    {
+      "year": 2011,
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 7151
+    },
+    {
+      "year": 2011,
+      "company": "The Procter & Gamble Company",
+      "shares": 72391036,
+      "cost_millions": 464,
+      "market_millions": 4829
     },
     {
       "year": 2011,
@@ -1184,17 +2060,31 @@
     },
     {
       "year": 2011,
-      "company": "POSCO",
-      "shares": 3947555,
-      "cost_millions": 768,
-      "market_millions": 1301
+      "company": "Wal-Mart Stores, Inc",
+      "shares": 39037142,
+      "cost_millions": 1893,
+      "market_millions": 2333
     },
     {
       "year": 2011,
-      "company": "The Procter & Gamble Company",
-      "shares": 72391036,
-      "cost_millions": 464,
-      "market_millions": 4829
+      "company": "ConocoPhillips",
+      "shares": 29100937,
+      "cost_millions": 2027,
+      "market_millions": 2121
+    },
+    {
+      "year": 2011,
+      "company": "U.S. Bancorp",
+      "shares": 78060769,
+      "cost_millions": 2401,
+      "market_millions": 2112
+    },
+    {
+      "year": 2011,
+      "company": "Johnson & Johnson",
+      "shares": 31416127,
+      "cost_millions": 1880,
+      "market_millions": 2060
     },
     {
       "year": 2011,
@@ -1212,31 +2102,17 @@
     },
     {
       "year": 2011,
-      "company": "U.S. Bancorp",
-      "shares": 78060769,
-      "cost_millions": 2401,
-      "market_millions": 2112
-    },
-    {
-      "year": 2011,
-      "company": "Wal-Mart Stores, Inc",
-      "shares": 39037142,
-      "cost_millions": 1893,
-      "market_millions": 2333
-    },
-    {
-      "year": 2011,
-      "company": "Wells Fargo & Company",
-      "shares": 400015828,
-      "cost_millions": 9086,
-      "market_millions": 11024
+      "company": "POSCO",
+      "shares": 3947555,
+      "cost_millions": 768,
+      "market_millions": 1301
     },
     {
       "year": 2012,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 8715
+      "company": "Wells Fargo & Company",
+      "shares": 456170061,
+      "cost_millions": 10906,
+      "market_millions": 15592
     },
     {
       "year": 2012,
@@ -1247,20 +2123,6 @@
     },
     {
       "year": 2012,
-      "company": "ConocoPhillips",
-      "shares": 24123911,
-      "cost_millions": 1219,
-      "market_millions": 1399
-    },
-    {
-      "year": 2012,
-      "company": "DIRECTV",
-      "shares": 22999600,
-      "cost_millions": 1057,
-      "market_millions": 1154
-    },
-    {
-      "year": 2012,
       "company": "International Business Machines Corp",
       "shares": 68115484,
       "cost_millions": 11680,
@@ -1268,10 +2130,17 @@
     },
     {
       "year": 2012,
-      "company": "Moody’s Corporation",
-      "shares": 28415250,
-      "cost_millions": 287,
-      "market_millions": 1430
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 8715
+    },
+    {
+      "year": 2012,
+      "company": "Wal-Mart Stores, Inc",
+      "shares": 54823433,
+      "cost_millions": 2837,
+      "market_millions": 3741
     },
     {
       "year": 2012,
@@ -1282,24 +2151,17 @@
     },
     {
       "year": 2012,
-      "company": "Phillips 66",
-      "shares": 20668118,
-      "cost_millions": 660,
-      "market_millions": 1097
-    },
-    {
-      "year": 2012,
-      "company": "POSCO",
-      "shares": 3947555,
-      "cost_millions": 768,
-      "market_millions": 1295
-    },
-    {
-      "year": 2012,
       "company": "The Procter & Gamble Company",
       "shares": 52477678,
       "cost_millions": 336,
       "market_millions": 3563
+    },
+    {
+      "year": 2012,
+      "company": "U.S. Bancorp",
+      "shares": 78060769,
+      "cost_millions": 2401,
+      "market_millions": 2493
     },
     {
       "year": 2012,
@@ -1317,31 +2179,45 @@
     },
     {
       "year": 2012,
-      "company": "U.S. Bancorp",
-      "shares": 78060769,
-      "cost_millions": 2401,
-      "market_millions": 2493
+      "company": "Moody’s Corporation",
+      "shares": 28415250,
+      "cost_millions": 287,
+      "market_millions": 1430
     },
     {
       "year": 2012,
-      "company": "Wal-Mart Stores, Inc",
-      "shares": 54823433,
-      "cost_millions": 2837,
-      "market_millions": 3741
+      "company": "ConocoPhillips",
+      "shares": 24123911,
+      "cost_millions": 1219,
+      "market_millions": 1399
     },
     {
       "year": 2012,
-      "company": "Wells Fargo & Company",
-      "shares": 456170061,
-      "cost_millions": 10906,
-      "market_millions": 15592
+      "company": "POSCO",
+      "shares": 3947555,
+      "cost_millions": 768,
+      "market_millions": 1295
+    },
+    {
+      "year": 2012,
+      "company": "DIRECTV",
+      "shares": 22999600,
+      "cost_millions": 1057,
+      "market_millions": 1154
+    },
+    {
+      "year": 2012,
+      "company": "Phillips 66",
+      "shares": 20668118,
+      "cost_millions": 660,
+      "market_millions": 1097
     },
     {
       "year": 2013,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 13756
+      "company": "Wells Fargo & Company",
+      "shares": 483470853,
+      "cost_millions": 11871,
+      "market_millions": 21950
     },
     {
       "year": 2013,
@@ -1352,24 +2228,10 @@
     },
     {
       "year": 2013,
-      "company": "DIRECTV",
-      "shares": 22238900,
-      "cost_millions": 1017,
-      "market_millions": 1536
-    },
-    {
-      "year": 2013,
-      "company": "Exxon Mobil Corp",
-      "shares": 41129643,
-      "cost_millions": 3737,
-      "market_millions": 4162
-    },
-    {
-      "year": 2013,
-      "company": "The Goldman Sachs Group, Inc",
-      "shares": 13062594,
-      "cost_millions": 750,
-      "market_millions": 2315
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 13756
     },
     {
       "year": 2013,
@@ -1380,10 +2242,10 @@
     },
     {
       "year": 2013,
-      "company": "Moody’s Corporation",
-      "shares": 24669778,
-      "cost_millions": 248,
-      "market_millions": 1936
+      "company": "Wal-Mart Stores, Inc",
+      "shares": 56805984,
+      "cost_millions": 2976,
+      "market_millions": 4470
     },
     {
       "year": 2013,
@@ -1394,13 +2256,6 @@
     },
     {
       "year": 2013,
-      "company": "Phillips 66",
-      "shares": 20668118,
-      "cost_millions": 660,
-      "market_millions": 1594
-    },
-    {
-      "year": 2013,
       "company": "The Procter & Gamble Company",
       "shares": 52477678,
       "cost_millions": 336,
@@ -1408,17 +2263,10 @@
     },
     {
       "year": 2013,
-      "company": "Sanofi",
-      "shares": 22169930,
-      "cost_millions": 1747,
-      "market_millions": 2354
-    },
-    {
-      "year": 2013,
-      "company": "Tesco plc",
-      "shares": 301046076,
-      "cost_millions": 1699,
-      "market_millions": 1666
+      "company": "Exxon Mobil Corp",
+      "shares": 41129643,
+      "cost_millions": 3737,
+      "market_millions": 4162
     },
     {
       "year": 2013,
@@ -1429,17 +2277,59 @@
     },
     {
       "year": 2013,
-      "company": "Wal-Mart Stores, Inc",
-      "shares": 56805984,
-      "cost_millions": 2976,
-      "market_millions": 4470
+      "company": "Sanofi",
+      "shares": 22169930,
+      "cost_millions": 1747,
+      "market_millions": 2354
     },
     {
       "year": 2013,
+      "company": "The Goldman Sachs Group, Inc",
+      "shares": 13062594,
+      "cost_millions": 750,
+      "market_millions": 2315
+    },
+    {
+      "year": 2013,
+      "company": "Moody’s Corporation",
+      "shares": 24669778,
+      "cost_millions": 248,
+      "market_millions": 1936
+    },
+    {
+      "year": 2013,
+      "company": "Tesco plc",
+      "shares": 301046076,
+      "cost_millions": 1699,
+      "market_millions": 1666
+    },
+    {
+      "year": 2013,
+      "company": "Phillips 66",
+      "shares": 20668118,
+      "cost_millions": 660,
+      "market_millions": 1594
+    },
+    {
+      "year": 2013,
+      "company": "DIRECTV",
+      "shares": 22238900,
+      "cost_millions": 1017,
+      "market_millions": 1536
+    },
+    {
+      "year": 2014,
       "company": "Wells Fargo & Company",
       "shares": 483470853,
       "cost_millions": 11871,
-      "market_millions": 21950
+      "market_millions": 26504
+    },
+    {
+      "year": 2014,
+      "company": "The Coca-Cola Company",
+      "shares": 400000000,
+      "cost_millions": 1299,
+      "market_millions": 16888
     },
     {
       "year": 2014,
@@ -1450,10 +2340,66 @@
     },
     {
       "year": 2014,
-      "company": "The Coca-Cola Company",
-      "shares": 400000000,
-      "cost_millions": 1299,
-      "market_millions": 16888
+      "company": "International Business Machines Corp",
+      "shares": 76971817,
+      "cost_millions": 13157,
+      "market_millions": 12349
+    },
+    {
+      "year": 2014,
+      "company": "Wal-Mart Stores, Inc",
+      "shares": 67707544,
+      "cost_millions": 3798,
+      "market_millions": 5815
+    },
+    {
+      "year": 2014,
+      "company": "The Procter & Gamble Company",
+      "shares": 52477678,
+      "cost_millions": 336,
+      "market_millions": 4683
+    },
+    {
+      "year": 2014,
+      "company": "U.S. Bancorp",
+      "shares": 96890665,
+      "cost_millions": 3033,
+      "market_millions": 4355
+    },
+    {
+      "year": 2014,
+      "company": "Munich Re",
+      "shares": 20060390,
+      "cost_millions": 2990,
+      "market_millions": 4023
+    },
+    {
+      "year": 2014,
+      "company": "The Goldman Sachs Group, Inc",
+      "shares": 13062594,
+      "cost_millions": 750,
+      "market_millions": 2532
+    },
+    {
+      "year": 2014,
+      "company": "Moody’s Corporation",
+      "shares": 24669778,
+      "cost_millions": 248,
+      "market_millions": 2364
+    },
+    {
+      "year": 2014,
+      "company": "DIRECTV",
+      "shares": 24617939,
+      "cost_millions": 1454,
+      "market_millions": 2134
+    },
+    {
+      "year": 2014,
+      "company": "Sanofi",
+      "shares": 22169930,
+      "cost_millions": 1721,
+      "market_millions": 2032
     },
     {
       "year": 2014,
@@ -1471,101 +2417,17 @@
     },
     {
       "year": 2014,
-      "company": "DIRECTV",
-      "shares": 24617939,
-      "cost_millions": 1454,
-      "market_millions": 2134
-    },
-    {
-      "year": 2014,
-      "company": "The Goldman Sachs Group, Inc",
-      "shares": 13062594,
-      "cost_millions": 750,
-      "market_millions": 2532
-    },
-    {
-      "year": 2014,
-      "company": "International Business Machines Corp",
-      "shares": 76971817,
-      "cost_millions": 13157,
-      "market_millions": 12349
-    },
-    {
-      "year": 2014,
-      "company": "Moody’s Corporation",
-      "shares": 24669778,
-      "cost_millions": 248,
-      "market_millions": 2364
-    },
-    {
-      "year": 2014,
-      "company": "Munich Re",
-      "shares": 20060390,
-      "cost_millions": 2990,
-      "market_millions": 4023
-    },
-    {
-      "year": 2014,
-      "company": "The Procter & Gamble Company",
-      "shares": 52477678,
-      "cost_millions": 336,
-      "market_millions": 4683
-    },
-    {
-      "year": 2014,
-      "company": "Sanofi",
-      "shares": 22169930,
-      "cost_millions": 1721,
-      "market_millions": 2032
-    },
-    {
-      "year": 2014,
-      "company": "U.S. Bancorp",
-      "shares": 96890665,
-      "cost_millions": 3033,
-      "market_millions": 4355
-    },
-    {
-      "year": 2014,
       "company": "USG Corporation",
       "shares": 43387980,
       "cost_millions": 836,
       "market_millions": 1214
     },
     {
-      "year": 2014,
-      "company": "Wal-Mart Stores, Inc",
-      "shares": 67707544,
-      "cost_millions": 3798,
-      "market_millions": 5815
-    },
-    {
-      "year": 2014,
+      "year": 2015,
       "company": "Wells Fargo & Company",
-      "shares": 483470853,
-      "cost_millions": 11871,
-      "market_millions": 26504
-    },
-    {
-      "year": 2015,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 10545
-    },
-    {
-      "year": 2015,
-      "company": "AT&T",
-      "shares": 46577138,
-      "cost_millions": 1283,
-      "market_millions": 1603
-    },
-    {
-      "year": 2015,
-      "company": "Charter Communications, Inc",
-      "shares": 7463157,
-      "cost_millions": 1202,
-      "market_millions": 1367
+      "shares": 500000000,
+      "cost_millions": 12730,
+      "market_millions": 27180
     },
     {
       "year": 2015,
@@ -1576,27 +2438,6 @@
     },
     {
       "year": 2015,
-      "company": "DaVita HealthCare Partners Inc",
-      "shares": 18513482,
-      "cost_millions": 843,
-      "market_millions": 1291
-    },
-    {
-      "year": 2015,
-      "company": "Deere & Company",
-      "shares": 22164450,
-      "cost_millions": 1773,
-      "market_millions": 1690
-    },
-    {
-      "year": 2015,
-      "company": "The Goldman Sachs Group, Inc",
-      "shares": 11390582,
-      "cost_millions": 654,
-      "market_millions": 2053
-    },
-    {
-      "year": 2015,
       "company": "International Business Machines Corp",
       "shares": 81033450,
       "cost_millions": 13791,
@@ -1604,17 +2445,10 @@
     },
     {
       "year": 2015,
-      "company": "Moody’s Corporation",
-      "shares": 24669778,
-      "cost_millions": 248,
-      "market_millions": 2475
-    },
-    {
-      "year": 2015,
-      "company": "Phillips 66",
-      "shares": 55384926,
-      "cost_millions": 4357,
-      "market_millions": 4530
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 10545
     },
     {
       "year": 2015,
@@ -1625,10 +2459,10 @@
     },
     {
       "year": 2015,
-      "company": "Sanofi",
-      "shares": 22169930,
-      "cost_millions": 1701,
-      "market_millions": 1896
+      "company": "Phillips 66",
+      "shares": 55384926,
+      "cost_millions": 4357,
+      "market_millions": 4530
     },
     {
       "year": 2015,
@@ -1646,10 +2480,73 @@
     },
     {
       "year": 2015,
+      "company": "Moody’s Corporation",
+      "shares": 24669778,
+      "cost_millions": 248,
+      "market_millions": 2475
+    },
+    {
+      "year": 2015,
+      "company": "The Goldman Sachs Group, Inc",
+      "shares": 11390582,
+      "cost_millions": 654,
+      "market_millions": 2053
+    },
+    {
+      "year": 2015,
+      "company": "Sanofi",
+      "shares": 22169930,
+      "cost_millions": 1701,
+      "market_millions": 1896
+    },
+    {
+      "year": 2015,
+      "company": "Deere & Company",
+      "shares": 22164450,
+      "cost_millions": 1773,
+      "market_millions": 1690
+    },
+    {
+      "year": 2015,
+      "company": "AT&T",
+      "shares": 46577138,
+      "cost_millions": 1283,
+      "market_millions": 1603
+    },
+    {
+      "year": 2015,
+      "company": "Charter Communications, Inc",
+      "shares": 7463157,
+      "cost_millions": 1202,
+      "market_millions": 1367
+    },
+    {
+      "year": 2015,
+      "company": "DaVita HealthCare Partners Inc",
+      "shares": 18513482,
+      "cost_millions": 843,
+      "market_millions": 1291
+    },
+    {
+      "year": 2016,
       "company": "Wells Fargo & Company",
       "shares": 500000000,
       "cost_millions": 12730,
-      "market_millions": 27180
+      "market_millions": 27555
+    },
+    {
+      "year": 2016,
+      "company": "The Coca-Cola Company",
+      "shares": 400000000,
+      "cost_millions": 1299,
+      "market_millions": 16584
+    },
+    {
+      "year": 2016,
+      "company": "International Business Machines Corp",
+      "shares": 81232303,
+      "cost_millions": 13815,
+      "market_millions": 13484
     },
     {
       "year": 2016,
@@ -1667,66 +2564,10 @@
     },
     {
       "year": 2016,
-      "company": "Charter Communications, Inc",
-      "shares": 6789054,
-      "cost_millions": 1210,
-      "market_millions": 1955
-    },
-    {
-      "year": 2016,
-      "company": "The Coca-Cola Company",
-      "shares": 400000000,
-      "cost_millions": 1299,
-      "market_millions": 16584
-    },
-    {
-      "year": 2016,
-      "company": "Delta Airlines Inc",
-      "shares": 54934718,
-      "cost_millions": 2299,
-      "market_millions": 2702
-    },
-    {
-      "year": 2016,
-      "company": "The Goldman Sachs Group, Inc",
-      "shares": 11390582,
-      "cost_millions": 654,
-      "market_millions": 2727
-    },
-    {
-      "year": 2016,
-      "company": "International Business Machines Corp",
-      "shares": 81232303,
-      "cost_millions": 13815,
-      "market_millions": 13484
-    },
-    {
-      "year": 2016,
-      "company": "Moody’s Corporation",
-      "shares": 24669778,
-      "cost_millions": 248,
-      "market_millions": 2326
-    },
-    {
-      "year": 2016,
       "company": "Phillips 66",
       "shares": 74587892,
       "cost_millions": 5841,
       "market_millions": 6445
-    },
-    {
-      "year": 2016,
-      "company": "Sanofi",
-      "shares": 22169930,
-      "cost_millions": 1692,
-      "market_millions": 1791
-    },
-    {
-      "year": 2016,
-      "company": "Southwest Airlines Co",
-      "shares": 43203775,
-      "cost_millions": 1757,
-      "market_millions": 2153
     },
     {
       "year": 2016,
@@ -1737,10 +2578,52 @@
     },
     {
       "year": 2016,
+      "company": "The Goldman Sachs Group, Inc",
+      "shares": 11390582,
+      "cost_millions": 654,
+      "market_millions": 2727
+    },
+    {
+      "year": 2016,
+      "company": "Delta Airlines Inc",
+      "shares": 54934718,
+      "cost_millions": 2299,
+      "market_millions": 2702
+    },
+    {
+      "year": 2016,
+      "company": "Moody’s Corporation",
+      "shares": 24669778,
+      "cost_millions": 248,
+      "market_millions": 2326
+    },
+    {
+      "year": 2016,
+      "company": "Southwest Airlines Co",
+      "shares": 43203775,
+      "cost_millions": 1757,
+      "market_millions": 2153
+    },
+    {
+      "year": 2016,
+      "company": "Charter Communications, Inc",
+      "shares": 6789054,
+      "cost_millions": 1210,
+      "market_millions": 1955
+    },
+    {
+      "year": 2016,
       "company": "United Continental Holdings Inc",
       "shares": 26620184,
       "cost_millions": 1477,
       "market_millions": 1940
+    },
+    {
+      "year": 2016,
+      "company": "Sanofi",
+      "shares": 22169930,
+      "cost_millions": 1692,
+      "market_millions": 1791
     },
     {
       "year": 2016,
@@ -1750,18 +2633,11 @@
       "market_millions": 1253
     },
     {
-      "year": 2016,
-      "company": "Wells Fargo & Company",
-      "shares": 500000000,
-      "cost_millions": 12730,
-      "market_millions": 27555
-    },
-    {
       "year": 2017,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 15056
+      "company": "Wells Fargo & Company",
+      "shares": 482544468,
+      "cost_millions": 11837,
+      "market_millions": 29276
     },
     {
       "year": 2017,
@@ -1779,27 +2655,6 @@
     },
     {
       "year": 2017,
-      "company": "The Bank of New York Mellon Corporation",
-      "shares": 53307534,
-      "cost_millions": 2230,
-      "market_millions": 2871
-    },
-    {
-      "year": 2017,
-      "company": "BYD Company Ltd",
-      "shares": 225000000,
-      "cost_millions": 232,
-      "market_millions": 1961
-    },
-    {
-      "year": 2017,
-      "company": "Charter Communications, Inc",
-      "shares": 6789054,
-      "cost_millions": 1210,
-      "market_millions": 2281
-    },
-    {
-      "year": 2017,
       "company": "The Coca-Cola Company",
       "shares": 400000000,
       "cost_millions": 1299,
@@ -1807,31 +2662,10 @@
     },
     {
       "year": 2017,
-      "company": "Delta Airlines Inc",
-      "shares": 53110395,
-      "cost_millions": 2219,
-      "market_millions": 2974
-    },
-    {
-      "year": 2017,
-      "company": "General Motors Company",
-      "shares": 44527147,
-      "cost_millions": 1343,
-      "market_millions": 1825
-    },
-    {
-      "year": 2017,
-      "company": "The Goldman Sachs Group, Inc",
-      "shares": 11390582,
-      "cost_millions": 654,
-      "market_millions": 2902
-    },
-    {
-      "year": 2017,
-      "company": "Moody’s Corporation",
-      "shares": 24669778,
-      "cost_millions": 248,
-      "market_millions": 3642
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 15056
     },
     {
       "year": 2017,
@@ -1842,13 +2676,6 @@
     },
     {
       "year": 2017,
-      "company": "Southwest Airlines Co",
-      "shares": 47659456,
-      "cost_millions": 1997,
-      "market_millions": 3119
-    },
-    {
-      "year": 2017,
       "company": "U.S. Bancorp",
       "shares": 103855045,
       "cost_millions": 3343,
@@ -1856,17 +2683,59 @@
     },
     {
       "year": 2017,
-      "company": "Wells Fargo & Company",
-      "shares": 482544468,
-      "cost_millions": 11837,
-      "market_millions": 29276
+      "company": "Moody’s Corporation",
+      "shares": 24669778,
+      "cost_millions": 248,
+      "market_millions": 3642
     },
     {
-      "year": 2018,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 14452
+      "year": 2017,
+      "company": "Southwest Airlines Co",
+      "shares": 47659456,
+      "cost_millions": 1997,
+      "market_millions": 3119
+    },
+    {
+      "year": 2017,
+      "company": "Delta Airlines Inc",
+      "shares": 53110395,
+      "cost_millions": 2219,
+      "market_millions": 2974
+    },
+    {
+      "year": 2017,
+      "company": "The Goldman Sachs Group, Inc",
+      "shares": 11390582,
+      "cost_millions": 654,
+      "market_millions": 2902
+    },
+    {
+      "year": 2017,
+      "company": "The Bank of New York Mellon Corporation",
+      "shares": 53307534,
+      "cost_millions": 2230,
+      "market_millions": 2871
+    },
+    {
+      "year": 2017,
+      "company": "Charter Communications, Inc",
+      "shares": 6789054,
+      "cost_millions": 1210,
+      "market_millions": 2281
+    },
+    {
+      "year": 2017,
+      "company": "BYD Company Ltd",
+      "shares": 225000000,
+      "cost_millions": 232,
+      "market_millions": 1961
+    },
+    {
+      "year": 2017,
+      "company": "General Motors Company",
+      "shares": 44527147,
+      "cost_millions": 1343,
+      "market_millions": 1825
     },
     {
       "year": 2018,
@@ -1884,17 +2753,10 @@
     },
     {
       "year": 2018,
-      "company": "The Bank of New York Mellon Corp",
-      "shares": 84488751,
-      "cost_millions": 3860,
-      "market_millions": 3977
-    },
-    {
-      "year": 2018,
-      "company": "Charter Communications, Inc",
-      "shares": 6789054,
-      "cost_millions": 1210,
-      "market_millions": 1935
+      "company": "Wells Fargo & Company",
+      "shares": 449349102,
+      "cost_millions": 10639,
+      "market_millions": 20706
     },
     {
       "year": 2018,
@@ -1902,6 +2764,41 @@
       "shares": 400000000,
       "cost_millions": 1299,
       "market_millions": 18940
+    },
+    {
+      "year": 2018,
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 14452
+    },
+    {
+      "year": 2018,
+      "company": "U.S. Bancorp",
+      "shares": 146346999,
+      "cost_millions": 5548,
+      "market_millions": 6688
+    },
+    {
+      "year": 2018,
+      "company": "JPMorgan Chase & Co",
+      "shares": 50661394,
+      "cost_millions": 5605,
+      "market_millions": 4946
+    },
+    {
+      "year": 2018,
+      "company": "The Bank of New York Mellon Corp",
+      "shares": 84488751,
+      "cost_millions": 3860,
+      "market_millions": 3977
+    },
+    {
+      "year": 2018,
+      "company": "Moody’s Corporation",
+      "shares": 24669778,
+      "cost_millions": 248,
+      "market_millions": 3455
     },
     {
       "year": 2018,
@@ -1919,20 +2816,6 @@
     },
     {
       "year": 2018,
-      "company": "JPMorgan Chase & Co",
-      "shares": 50661394,
-      "cost_millions": 5605,
-      "market_millions": 4946
-    },
-    {
-      "year": 2018,
-      "company": "Moody’s Corporation",
-      "shares": 24669778,
-      "cost_millions": 248,
-      "market_millions": 3455
-    },
-    {
-      "year": 2018,
       "company": "Southwest Airlines Co",
       "shares": 47890899,
       "cost_millions": 2005,
@@ -1940,17 +2823,10 @@
     },
     {
       "year": 2018,
-      "company": "United Continental Holdings Inc",
-      "shares": 21938642,
-      "cost_millions": 1195,
-      "market_millions": 1837
-    },
-    {
-      "year": 2018,
-      "company": "U.S. Bancorp",
-      "shares": 146346999,
-      "cost_millions": 5548,
-      "market_millions": 6688
+      "company": "Charter Communications, Inc",
+      "shares": 6789054,
+      "cost_millions": 1210,
+      "market_millions": 1935
     },
     {
       "year": 2018,
@@ -1961,17 +2837,10 @@
     },
     {
       "year": 2018,
-      "company": "Wells Fargo & Company",
-      "shares": 449349102,
-      "cost_millions": 10639,
-      "market_millions": 20706
-    },
-    {
-      "year": 2019,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 18874
+      "company": "United Continental Holdings Inc",
+      "shares": 21938642,
+      "cost_millions": 1195,
+      "market_millions": 1837
     },
     {
       "year": 2019,
@@ -1989,20 +2858,6 @@
     },
     {
       "year": 2019,
-      "company": "The Bank of New York Mellon Corp",
-      "shares": 81488751,
-      "cost_millions": 3696,
-      "market_millions": 4101
-    },
-    {
-      "year": 2019,
-      "company": "Charter Communications, Inc",
-      "shares": 5426609,
-      "cost_millions": 944,
-      "market_millions": 2632
-    },
-    {
-      "year": 2019,
       "company": "The Coca-Cola Company",
       "shares": 400000000,
       "cost_millions": 1299,
@@ -2010,17 +2865,24 @@
     },
     {
       "year": 2019,
-      "company": "Delta Air Lines, Inc",
-      "shares": 70910456,
-      "cost_millions": 3125,
-      "market_millions": 4147
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 18874
     },
     {
       "year": 2019,
-      "company": "The Goldman Sachs Group, Inc",
-      "shares": 12435814,
-      "cost_millions": 890,
-      "market_millions": 2859
+      "company": "Wells Fargo & Company",
+      "shares": 345688918,
+      "cost_millions": 7040,
+      "market_millions": 18598
+    },
+    {
+      "year": 2019,
+      "company": "U.S. Bancorp",
+      "shares": 149497786,
+      "cost_millions": 5709,
+      "market_millions": 8864
     },
     {
       "year": 2019,
@@ -2038,6 +2900,34 @@
     },
     {
       "year": 2019,
+      "company": "Delta Air Lines, Inc",
+      "shares": 70910456,
+      "cost_millions": 3125,
+      "market_millions": 4147
+    },
+    {
+      "year": 2019,
+      "company": "The Bank of New York Mellon Corp",
+      "shares": 81488751,
+      "cost_millions": 3696,
+      "market_millions": 4101
+    },
+    {
+      "year": 2019,
+      "company": "The Goldman Sachs Group, Inc",
+      "shares": 12435814,
+      "cost_millions": 890,
+      "market_millions": 2859
+    },
+    {
+      "year": 2019,
+      "company": "Charter Communications, Inc",
+      "shares": 5426609,
+      "cost_millions": 944,
+      "market_millions": 2632
+    },
+    {
+      "year": 2019,
       "company": "Southwest Airlines Co",
       "shares": 46692713,
       "cost_millions": 1940,
@@ -2052,38 +2942,10 @@
     },
     {
       "year": 2019,
-      "company": "U.S. Bancorp",
-      "shares": 149497786,
-      "cost_millions": 5709,
-      "market_millions": 8864
-    },
-    {
-      "year": 2019,
       "company": "Visa Inc",
       "shares": 10239160,
       "cost_millions": 349,
       "market_millions": 1924
-    },
-    {
-      "year": 2019,
-      "company": "Wells Fargo & Company",
-      "shares": 345688918,
-      "cost_millions": 7040,
-      "market_millions": 18598
-    },
-    {
-      "year": 2020,
-      "company": "AbbVie Inc",
-      "shares": 25533082,
-      "cost_millions": 2333,
-      "market_millions": 2736
-    },
-    {
-      "year": 2020,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 18331
     },
     {
       "year": 2020,
@@ -2101,34 +2963,6 @@
     },
     {
       "year": 2020,
-      "company": "The Bank of New York Mellon Corp",
-      "shares": 66835615,
-      "cost_millions": 2918,
-      "market_millions": 2837
-    },
-    {
-      "year": 2020,
-      "company": "BYD Co. Ltd",
-      "shares": 225000000,
-      "cost_millions": 232,
-      "market_millions": 5897
-    },
-    {
-      "year": 2020,
-      "company": "Charter Communications, Inc",
-      "shares": 5213461,
-      "cost_millions": 904,
-      "market_millions": 3449
-    },
-    {
-      "year": 2020,
-      "company": "Chevron Corporation",
-      "shares": 48498965,
-      "cost_millions": 4024,
-      "market_millions": 4096
-    },
-    {
-      "year": 2020,
       "company": "The Coca-Cola Company",
       "shares": 400000000,
       "cost_millions": 1299,
@@ -2136,24 +2970,17 @@
     },
     {
       "year": 2020,
-      "company": "General Motors Company",
-      "shares": 52975000,
-      "cost_millions": 1616,
-      "market_millions": 2206
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 18331
     },
     {
       "year": 2020,
-      "company": "Itochu Corporation",
-      "shares": 81304200,
-      "cost_millions": 1862,
-      "market_millions": 2336
-    },
-    {
-      "year": 2020,
-      "company": "Merck & Co., Inc",
-      "shares": 28697435,
-      "cost_millions": 2390,
-      "market_millions": 2347
+      "company": "Verizon Communications Inc",
+      "shares": 146716496,
+      "cost_millions": 8691,
+      "market_millions": 8620
     },
     {
       "year": 2020,
@@ -2171,17 +2998,59 @@
     },
     {
       "year": 2020,
-      "company": "Verizon Communications Inc",
-      "shares": 146716496,
-      "cost_millions": 8691,
-      "market_millions": 8620
+      "company": "BYD Co. Ltd",
+      "shares": 225000000,
+      "cost_millions": 232,
+      "market_millions": 5897
     },
     {
-      "year": 2021,
-      "company": "American Express Company",
-      "shares": 151610700,
-      "cost_millions": 1287,
-      "market_millions": 24804
+      "year": 2020,
+      "company": "Chevron Corporation",
+      "shares": 48498965,
+      "cost_millions": 4024,
+      "market_millions": 4096
+    },
+    {
+      "year": 2020,
+      "company": "Charter Communications, Inc",
+      "shares": 5213461,
+      "cost_millions": 904,
+      "market_millions": 3449
+    },
+    {
+      "year": 2020,
+      "company": "The Bank of New York Mellon Corp",
+      "shares": 66835615,
+      "cost_millions": 2918,
+      "market_millions": 2837
+    },
+    {
+      "year": 2020,
+      "company": "AbbVie Inc",
+      "shares": 25533082,
+      "cost_millions": 2333,
+      "market_millions": 2736
+    },
+    {
+      "year": 2020,
+      "company": "Merck & Co., Inc",
+      "shares": 28697435,
+      "cost_millions": 2390,
+      "market_millions": 2347
+    },
+    {
+      "year": 2020,
+      "company": "Itochu Corporation",
+      "shares": 81304200,
+      "cost_millions": 1862,
+      "market_millions": 2336
+    },
+    {
+      "year": 2020,
+      "company": "General Motors Company",
+      "shares": 52975000,
+      "cost_millions": 1616,
+      "market_millions": 2206
     },
     {
       "year": 2021,
@@ -2199,10 +3068,38 @@
     },
     {
       "year": 2021,
-      "company": "The Bank of New York Mellon Corp",
-      "shares": 66835615,
-      "cost_millions": 2918,
-      "market_millions": 3882
+      "company": "American Express Company",
+      "shares": 151610700,
+      "cost_millions": 1287,
+      "market_millions": 24804
+    },
+    {
+      "year": 2021,
+      "company": "The Coca-Cola Company",
+      "shares": 400000000,
+      "cost_millions": 1299,
+      "market_millions": 23684
+    },
+    {
+      "year": 2021,
+      "company": "Moody’s Corporation",
+      "shares": 24669778,
+      "cost_millions": 248,
+      "market_millions": 9636
+    },
+    {
+      "year": 2021,
+      "company": "Verizon Communications Inc",
+      "shares": 158824575,
+      "cost_millions": 9387,
+      "market_millions": 8253
+    },
+    {
+      "year": 2021,
+      "company": "U.S. Bancorp",
+      "shares": 143456055,
+      "cost_millions": 5384,
+      "market_millions": 8058
     },
     {
       "year": 2021,
@@ -2213,13 +3110,6 @@
     },
     {
       "year": 2021,
-      "company": "Charter Communications, Inc",
-      "shares": 3828941,
-      "cost_millions": 643,
-      "market_millions": 2496
-    },
-    {
-      "year": 2021,
       "company": "Chevron Corporation",
       "shares": 38245036,
       "cost_millions": 3420,
@@ -2227,10 +3117,10 @@
     },
     {
       "year": 2021,
-      "company": "The Coca-Cola Company",
-      "shares": 400000000,
-      "cost_millions": 1299,
-      "market_millions": 23684
+      "company": "The Bank of New York Mellon Corp",
+      "shares": 66835615,
+      "cost_millions": 2918,
+      "market_millions": 3882
     },
     {
       "year": 2021,
@@ -2255,31 +3145,17 @@
     },
     {
       "year": 2021,
+      "company": "Charter Communications, Inc",
+      "shares": 3828941,
+      "cost_millions": 643,
+      "market_millions": 2496
+    },
+    {
+      "year": 2021,
       "company": "Mitsui & Co., Ltd",
       "shares": 93776200,
       "cost_millions": 1621,
       "market_millions": 2219
-    },
-    {
-      "year": 2021,
-      "company": "Moody’s Corporation",
-      "shares": 24669778,
-      "cost_millions": 248,
-      "market_millions": 9636
-    },
-    {
-      "year": 2021,
-      "company": "U.S. Bancorp",
-      "shares": 143456055,
-      "cost_millions": 5384,
-      "market_millions": 8058
-    },
-    {
-      "year": 2021,
-      "company": "Verizon Communications Inc",
-      "shares": 158824575,
-      "cost_millions": 9387,
-      "market_millions": 8253
     }
   ]
 }
